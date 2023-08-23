@@ -9,7 +9,7 @@ SemicONTO (***Semic***onductor ***ONTO***logy) is an ontology...
 
 ### What equipments or softwares do you use in your workflow?
 
-### When you design a semiconductor, what materials properties do you focus on?
+### When you design a semiconductor, what material properties do you focus on?
 
 ### Do you need some data (e.g., published in other papers) before you design your semiconductors? If so, what is such data about? 
 
