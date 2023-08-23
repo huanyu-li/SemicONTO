@@ -3,7 +3,7 @@
 SemicONTO (***Semic***onductor ***ONTO***logy) is an ontology...  
 
 
-### What kinds of semiconductors are you working on?
+### What kinds of semiconductors are you working on? How do you classify different semiconductors?
 
 ### What are the processes/workflows when you design a semiconductor?
 
