@@ -8,10 +8,10 @@ html_path = './docs/index.html'
 webvowl_json_path = './docs/webvowl/data/semiconto.json'
 
 def generate_webvowl():
-    cmd = "java -jar owl2vowl.jar -file {onto}".format(onto=source_ontology_path)
+    cmd = "java --add-opens java.base/java.lang=ALL-UNNAMED -jar owl2vowl.jar -file {onto} -output {output}".format(onto=source_ontology_path, output=webvowl_json_path)
     os.system(cmd)
-    mv_cmd = "mv -f {onto_json} {output}".format(onto_json=onto_json_path, output=webvowl_json_path)
-    os.system(mv_cmd)
+    #mv_cmd = "mv -f {onto_json} {output}".format(onto_json=onto_json_path, output=webvowl_json_path)
+    #os.system(mv_cmd)
 
 def generate_html():
     onto_doc = VocPub(ontology=source_ontology_path)

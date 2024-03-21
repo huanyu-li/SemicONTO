@@ -1,20 +1,33 @@
 {
-  "_comment" : "Created with OWL2VOWL (version 0.2.0), http://vowl.visualdataweb.org",
-  "namespace" : [ ],
+  "_comment" : "Created with OWL2VOWL (version 0.3.7), http://vowl.visualdataweb.org",
   "header" : {
-    "languages" : [ "IRI-based", "undefined" ],
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://qudt.org/schema/qudt", "https://w3id.org/mdo/core", "http://w3id.org/semiconto", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/ns/prov", "http://www.w3.org/2001/XMLSchema" ],
+    "prefixList" : {
+      "owl" : "http://www.w3.org/2002/07/owl#",
+      "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "xsd" : "http://www.w3.org/2001/XMLSchema#",
+      "" : "http://w3id.org/semiconto/",
+      "xml" : "http://www.w3.org/XML/1998/namespace",
+      "rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+    },
     "title" : {
       "undefined" : "Semiconductor ONTOlogy (SemicONTO)"
     },
-    "uri" : "http://w3id.org/semiconto/",
+    "iri" : "http://w3id.org/semiconto/",
     "version" : "0.1",
     "author" : [ "Huanyu Li" ],
-    "seeAlso" : [ "https://github.com/huanyu-li/SemicONTO" ],
     "other" : {
       "license" : [ {
         "identifier" : "license",
         "language" : "undefined",
         "value" : "https://github.com/huanyu-li/SemicONTO/blob/main/LICENSE",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Huanyu Li",
         "type" : "label"
       } ],
       "created" : [ {
@@ -29,436 +42,409 @@
         "value" : "semiconto",
         "type" : "label"
       } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1",
+        "type" : "label"
+      } ],
       "preferredNamespaceUri" : [ {
         "identifier" : "preferredNamespaceUri",
         "language" : "undefined",
         "value" : "http://w3id.org/SemicONTO/0.1/",
         "type" : "label"
-      } ]
-    }
-  },
-  "metrics" : {
-    "classCount" : 51,
-    "datatypeCount" : 0,
-    "objectPropertyCount" : 10,
-    "datatypePropertyCount" : 0,
-    "propertyCount" : 10,
-    "nodeCount" : 51,
-    "axiomCount" : 140,
-    "individualCount" : 0
-  },
-  "class" : [ {
-    "id" : "class3",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class22",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class35",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class10",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class47",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class5",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class19",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class46",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class32",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class40",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "class8",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class4",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class12",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class42",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class1",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class44",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class13",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class17",
-    "type" : "externalclass"
-  }, {
-    "id" : "class24",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class6",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class25",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class29",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class33",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class20",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class41",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class48",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class31",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class11",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class43",
-    "type" : "externalclass"
-  }, {
-    "id" : "class39",
-    "type" : "externalclass"
-  }, {
-    "id" : "class45",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class15",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class21",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class23",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class14",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class16",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class36",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class49",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class26",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class30",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class9",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class2",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class34",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class7",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class51",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class50",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class27",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class18",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class38",
-    "type" : "owl:Class"
-  }, {
-    "id" : "class28",
-    "type" : "externalclass"
-  }, {
-    "id" : "class37",
-    "type" : "owl:Class"
-  }, {
-    "id" : "thing3",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "thing2",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "thing1",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "class54",
-    "type" : "owl:unionOf"
-  } ],
-  "classAttribute" : [ {
-    "id" : "class3",
-    "label" : {
-      "IRI-based" : "ThermalProperty"
-    },
-    "iri" : "http://w3id.org/semiconto/ThermalProperty",
-    "subClasses" : [ "class37", "class12", "class42", "class38", "class21", "class46" ],
-    "superClasses" : [ "class4" ],
-    "instances" : 0
-  }, {
-    "id" : "class22",
-    "label" : {
-      "IRI-based" : "SemiconductorStructure"
-    },
-    "iri" : "http://w3id.org/semiconto/SemiconductorStructure",
-    "instances" : 0
-  }, {
-    "id" : "class35",
-    "label" : {
-      "IRI-based" : "ChemicalSubstance"
-    },
-    "iri" : "http://w3id.org/semiconto/ChemicalSubstance",
-    "superClasses" : [ "class20" ],
-    "annotations" : {
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Semiconductor ONTOlogy (SemicONTO)",
+        "type" : "label"
+      } ],
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://emmo.info/emmo#EMMO_df96cbb6_b5ee_4222_8eab_b3675df24bea",
+        "value" : "https://github.com/huanyu-li/SemicONTO",
         "type" : "label"
-      }, {
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "92",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "98",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "96",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "79",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://w3id.org/semiconto/SpecificHeat",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SpecificHeat"
+    },
+    "id" : "3",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://w3id.org/semiconto/TemperatureCondition",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TemperatureCondition"
+    },
+    "id" : "26",
+    "superClasses" : [ "27", "28" ]
+  }, {
+    "iri" : "http://w3id.org/semiconto/SemiconductorKind",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SemiconductorKind"
+    },
+    "subClasses" : [ "30", "31" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://w3id.org/semiconto/AbsorptionCofficient",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AbsorptionCofficient"
+    },
+    "id" : "32",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://w3id.org/semiconto/Donor",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Donor"
+    },
+    "id" : "33",
+    "superClasses" : [ "34" ]
+  }, {
+    "iri" : "http://w3id.org/semiconto/MechanicalProperty",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MechanicalProperty"
+    },
+    "id" : "25",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://w3id.org/semiconto/BreakdownField",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BreakdownField"
+    },
+    "id" : "35",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://w3id.org/semiconto/N-TypeSemiconductor",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "N-TypeSemiconductor"
+    },
+    "id" : "36",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://w3id.org/semiconto/ChemicalSubstance",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
         "value" : "http://purl.obolibrary.org/obo/chebi#59999",
         "type" : "label"
-      } ]
-    },
-    "instances" : 0
-  }, {
-    "id" : "class10",
-    "label" : {
-      "IRI-based" : "AbsorptionCofficient"
-    },
-    "iri" : "http://w3id.org/semiconto/AbsorptionCofficient",
-    "superClasses" : [ "class33" ],
-    "instances" : 0
-  }, {
-    "id" : "class47",
-    "label" : {
-      "IRI-based" : "ElectronIonizationRate"
-    },
-    "iri" : "http://w3id.org/semiconto/ElectronIonizationRate",
-    "superClasses" : [ "class24" ],
-    "instances" : 0
-  }, {
-    "id" : "class5",
-    "label" : {
-      "IRI-based" : "SemiconductorMaterial"
-    },
-    "iri" : "http://w3id.org/semiconto/SemiconductorMaterial",
-    "instances" : 0
-  }, {
-    "id" : "class19",
-    "label" : {
-      "IRI-based" : "HoleThermalVelocity"
-    },
-    "iri" : "http://w3id.org/semiconto/HoleThermalVelocity",
-    "superClasses" : [ "class24" ],
-    "instances" : 0
-  }, {
-    "id" : "class46",
-    "label" : {
-      "IRI-based" : "ThermalExpansion"
-    },
-    "iri" : "http://w3id.org/semiconto/ThermalExpansion",
-    "superClasses" : [ "class3" ],
-    "instances" : 0
-  }, {
-    "id" : "class32",
-    "label" : {
-      "IRI-based" : "MobilityHoles"
-    },
-    "iri" : "http://w3id.org/semiconto/MobilityHoles",
-    "superClasses" : [ "class24" ],
-    "instances" : 0
-  }, {
-    "id" : "class40",
-    "label" : {
-      "IRI-based" : "DopingRelation"
-    },
-    "iri" : "http://w3id.org/semiconto/DopingRelation",
-    "instances" : 0,
-    "union" : [ "class29", "class50" ]
-  }, {
-    "id" : "class8",
-    "label" : {
-      "IRI-based" : "ElectronDriftVelocity"
-    },
-    "iri" : "http://w3id.org/semiconto/ElectronDriftVelocity",
-    "superClasses" : [ "class24" ],
-    "instances" : 0
-  }, {
-    "id" : "class4",
-    "label" : {
-      "IRI-based" : "Property"
-    },
-    "iri" : "http://w3id.org/semiconto/Property",
-    "subClasses" : [ "class24", "class51", "class33", "class3" ],
-    "superClasses" : [ "class17" ],
-    "instances" : 0
-  }, {
-    "id" : "class12",
-    "label" : {
-      "IRI-based" : "MeltingPoint"
-    },
-    "iri" : "http://w3id.org/semiconto/MeltingPoint",
-    "superClasses" : [ "class3" ],
-    "instances" : 0
-  }, {
-    "id" : "class42",
-    "label" : {
-      "IRI-based" : "SpecificHeat"
-    },
-    "iri" : "http://w3id.org/semiconto/SpecificHeat",
-    "superClasses" : [ "class3" ],
-    "instances" : 0
-  }, {
-    "id" : "class1",
-    "label" : {
-      "IRI-based" : "Dopant"
-    },
-    "iri" : "http://w3id.org/semiconto/Dopant",
-    "subClasses" : [ "class29", "class50" ],
-    "instances" : 0
-  }, {
-    "id" : "class44",
-    "label" : {
-      "IRI-based" : "N-TypeSemiconductor"
-    },
-    "iri" : "http://w3id.org/semiconto/N-TypeSemiconductor",
-    "superClasses" : [ "class6" ],
-    "instances" : 0
-  }, {
-    "id" : "class13",
-    "label" : {
-      "IRI-based" : "MobilityElectrons"
-    },
-    "iri" : "http://w3id.org/semiconto/MobilityElectrons",
-    "superClasses" : [ "class24" ],
-    "instances" : 0
-  }, {
-    "id" : "class17",
-    "label" : {
-      "IRI-based" : "Quantity"
-    },
-    "iri" : "http://qudt.org/schema/qudt/Quantity",
-    "attributes" : [ "external" ],
-    "subClasses" : [ "class34", "class4", "class48" ],
-    "instances" : 0
-  }, {
-    "id" : "class24",
-    "label" : {
-      "IRI-based" : "ElectricalProperty"
-    },
-    "iri" : "http://w3id.org/semiconto/ElectricalProperty",
-    "subClasses" : [ "class16", "class9", "class23", "class8", "class47", "class27", "class15", "class19", "class13", "class32" ],
-    "superClasses" : [ "class4" ],
-    "instances" : 0
-  }, {
-    "id" : "class6",
-    "label" : {
-      "IRI-based" : "ExtrincSemiconductor"
-    },
-    "iri" : "http://w3id.org/semiconto/ExtrincSemiconductor",
-    "subClasses" : [ "class44", "class26" ],
-    "superClasses" : [ "class49" ],
-    "instances" : 0
-  }, {
-    "id" : "class25",
-    "label" : {
-      "IRI-based" : "RadiativeRecombinationCofficient"
-    },
-    "iri" : "http://w3id.org/semiconto/RadiativeRecombinationCofficient",
-    "superClasses" : [ "class33" ],
-    "instances" : 0
-  }, {
-    "id" : "class29",
-    "label" : {
-      "IRI-based" : "Acceptor"
-    },
-    "iri" : "http://w3id.org/semiconto/Acceptor",
-    "superClasses" : [ "class1" ],
-    "instances" : 0
-  }, {
-    "id" : "class33",
-    "label" : {
-      "IRI-based" : "OpticalProperty"
-    },
-    "iri" : "http://w3id.org/semiconto/OpticalProperty",
-    "subClasses" : [ "class10", "class7", "class45", "class25", "class30" ],
-    "superClasses" : [ "class4" ],
-    "instances" : 0
-  }, {
-    "id" : "class20",
-    "label" : {
-      "IRI-based" : "ChemicalEntity"
-    },
-    "iri" : "http://w3id.org/semiconto/ChemicalEntity",
-    "subClasses" : [ "class35", "class18" ],
-    "superClasses" : [ "class41" ],
-    "instances" : 0
-  }, {
-    "id" : "class41",
-    "label" : {
-      "IRI-based" : "Matter",
-      "undefined" : "Matter"
-    },
-    "iri" : "http://w3id.org/semiconto/Matter",
-    "comment" : {
-      "undefined" : "A matter is a physical substance."
-    },
-    "subClasses" : [ "class20", "class31" ],
-    "annotations" : {
-      "seeAlso" : [ {
+      }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://emmo.info/emmo#EMMO_5b2222df_4da6_442f_8244_96e9e45887d1",
+        "value" : "http://emmo.info/emmo#EMMO_df96cbb6_b5ee_4222_8eab_b3675df24bea",
         "type" : "label"
       } ]
     },
-    "instances" : 0
-  }, {
-    "id" : "class48",
     "label" : {
-      "IRI-based" : "TemperatureCondition"
+      "IRI-based" : "ChemicalSubstance"
     },
-    "iri" : "http://w3id.org/semiconto/TemperatureCondition",
-    "superClasses" : [ "class17", "class11" ],
-    "instances" : 0
+    "id" : "37",
+    "superClasses" : [ "38" ]
   }, {
-    "id" : "class31",
+    "iri" : "http://w3id.org/semiconto/ThermalExpansion",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
     "label" : {
-      "IRI-based" : "Material",
-      "undefined" : "Material"
+      "IRI-based" : "ThermalExpansion"
     },
+    "id" : "39",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://w3id.org/semiconto/Property",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Property"
+    },
+    "subClasses" : [ "2", "20", "4", "25" ],
+    "id" : "18",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Agent",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent"
+    },
+    "subClasses" : [ "22" ],
+    "attributes" : [ "external" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://w3id.org/semiconto/ElectricalProperty",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ElectricalProperty"
+    },
+    "subClasses" : [ "12", "10", "16", "14", "8", "6", "1", "35", "54", "55" ],
+    "id" : "2",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://w3id.org/semiconto/RadiativeRecombinationCofficient",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RadiativeRecombinationCofficient"
+    },
+    "id" : "56",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://w3id.org/semiconto/MobilityElectrons",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MobilityElectrons"
+    },
+    "id" : "16",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://w3id.org/semiconto/Dopant",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Dopant"
+    },
+    "subClasses" : [ "57", "33" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://w3id.org/semiconto/ExperimentalEquipment",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExperimentalEquipment"
+    },
+    "id" : "22",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://w3id.org/semiconto/HoleThermalVelocity",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HoleThermalVelocity"
+    },
+    "id" : "12",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://w3id.org/semiconto/ThermalProperty",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ThermalProperty"
+    },
+    "subClasses" : [ "39", "61", "62", "63", "64", "3" ],
+    "id" : "4",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://w3id.org/semiconto/ElectronIonizationRate",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ElectronIonizationRate"
+    },
+    "id" : "54",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://w3id.org/semiconto/InfraredRefractiveIndex",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InfraredRefractiveIndex"
+    },
+    "id" : "51",
+    "superClasses" : [ "20" ]
+  }, {
     "iri" : "http://w3id.org/semiconto/Material",
-    "superClasses" : [ "class41" ],
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
     "annotations" : {
       "seeAlso" : [ {
         "identifier" : "seeAlso",
@@ -467,663 +453,591 @@
         "type" : "label"
       } ]
     },
-    "instances" : 0
-  }, {
-    "id" : "class11",
     "label" : {
-      "IRI-based" : "Condition"
+      "IRI-based" : "Material",
+      "undefined" : "Material"
     },
-    "iri" : "http://w3id.org/semiconto/Condition",
-    "subClasses" : [ "class34", "class48" ],
-    "instances" : 0
+    "id" : "73",
+    "superClasses" : [ "74" ]
   }, {
-    "id" : "class43",
+    "iri" : "http://w3id.org/semiconto/DopingRelation",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
     "label" : {
-      "IRI-based" : "Calculation"
+      "IRI-based" : "DopingRelation"
     },
-    "iri" : "https://w3id.org/mdo/core/Calculation",
+    "id" : "77"
+  }, {
+    "iri" : "http://qudt.org/schema/qudt/Quantity",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Quantity"
+    },
+    "subClasses" : [ "18", "26", "41" ],
     "attributes" : [ "external" ],
-    "instances" : 0
+    "id" : "27"
   }, {
-    "id" : "class39",
-    "label" : {
-      "IRI-based" : "Agent"
-    },
-    "iri" : "http://www.w3.org/ns/prov#Agent",
-    "attributes" : [ "external" ],
-    "subClasses" : [ "class2" ],
-    "instances" : 0
-  }, {
-    "id" : "class45",
-    "label" : {
-      "IRI-based" : "OpticalPhotonEnergy"
-    },
-    "iri" : "http://w3id.org/semiconto/OpticalPhotonEnergy",
-    "superClasses" : [ "class33" ],
-    "instances" : 0
-  }, {
-    "id" : "class15",
-    "label" : {
-      "IRI-based" : "HoleIonizationRate"
-    },
-    "iri" : "http://w3id.org/semiconto/HoleIonizationRate",
-    "superClasses" : [ "class24" ],
-    "instances" : 0
-  }, {
-    "id" : "class21",
-    "label" : {
-      "IRI-based" : "ThermalDiffusivity"
-    },
-    "iri" : "http://w3id.org/semiconto/ThermalDiffusivity",
-    "superClasses" : [ "class3" ],
-    "instances" : 0
-  }, {
-    "id" : "class23",
-    "label" : {
-      "IRI-based" : "DiffusionCofficientHoles"
-    },
-    "iri" : "http://w3id.org/semiconto/DiffusionCofficientHoles",
-    "superClasses" : [ "class24" ],
-    "instances" : 0
-  }, {
-    "id" : "class14",
+    "iri" : "http://w3id.org/semiconto/Experiment",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
     "label" : {
       "IRI-based" : "Experiment"
     },
-    "iri" : "http://w3id.org/semiconto/Experiment",
-    "instances" : 0
+    "id" : "80"
   }, {
-    "id" : "class16",
+    "iri" : "http://w3id.org/semiconto/Acceptor",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
     "label" : {
-      "IRI-based" : "BreakdownField"
+      "IRI-based" : "Acceptor"
     },
-    "iri" : "http://w3id.org/semiconto/BreakdownField",
-    "superClasses" : [ "class24" ],
-    "instances" : 0
+    "id" : "57",
+    "superClasses" : [ "34" ]
   }, {
-    "id" : "class36",
+    "iri" : "http://w3id.org/semiconto/MobilityHoles",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
     "label" : {
-      "IRI-based" : "IntrinsicSemiconductor"
+      "IRI-based" : "MobilityHoles"
     },
-    "iri" : "http://w3id.org/semiconto/IntrinsicSemiconductor",
-    "superClasses" : [ "class49" ],
-    "instances" : 0
+    "id" : "55",
+    "superClasses" : [ "2" ]
   }, {
-    "id" : "class49",
+    "iri" : "http://qudt.org/schema/qudt/QuantityKind",
+    "baseIri" : "http://qudt.org/schema/qudt",
+    "instances" : 0,
     "label" : {
-      "IRI-based" : "SemiconductorKind"
+      "IRI-based" : "QuantityKind"
     },
-    "iri" : "http://w3id.org/semiconto/SemiconductorKind",
-    "subClasses" : [ "class6", "class36" ],
-    "instances" : 0
+    "attributes" : [ "external" ],
+    "id" : "81"
   }, {
-    "id" : "class26",
-    "label" : {
-      "IRI-based" : "P-TypeSemiconductor"
-    },
-    "iri" : "http://w3id.org/semiconto/P-TypeSemiconductor",
-    "superClasses" : [ "class6" ],
-    "instances" : 0
-  }, {
-    "id" : "class30",
-    "label" : {
-      "IRI-based" : "StaticDielectricConstant"
-    },
-    "iri" : "http://w3id.org/semiconto/StaticDielectricConstant",
-    "superClasses" : [ "class33" ],
-    "instances" : 0
-  }, {
-    "id" : "class9",
-    "label" : {
-      "IRI-based" : "DiffusionCofficientElectrons"
-    },
-    "iri" : "http://w3id.org/semiconto/DiffusionCofficientElectrons",
-    "superClasses" : [ "class24" ],
-    "instances" : 0
-  }, {
-    "id" : "class2",
-    "label" : {
-      "IRI-based" : "ExperimentalEquipment"
-    },
-    "iri" : "http://w3id.org/semiconto/ExperimentalEquipment",
-    "superClasses" : [ "class39" ],
-    "instances" : 0
-  }, {
-    "id" : "class34",
+    "iri" : "http://w3id.org/semiconto/AtmosphericPressureCondition",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
     "label" : {
       "IRI-based" : "AtmosphericPressureCondition"
     },
-    "iri" : "http://w3id.org/semiconto/AtmosphericPressureCondition",
-    "superClasses" : [ "class17", "class11" ],
-    "instances" : 0
+    "id" : "41",
+    "superClasses" : [ "27", "28" ]
   }, {
-    "id" : "class7",
-    "label" : {
-      "IRI-based" : "InfraredRefractiveIndex"
-    },
-    "iri" : "http://w3id.org/semiconto/InfraredRefractiveIndex",
-    "superClasses" : [ "class33" ],
-    "instances" : 0
-  }, {
-    "id" : "class51",
-    "label" : {
-      "IRI-based" : "MechanicalProperty"
-    },
-    "iri" : "http://w3id.org/semiconto/MechanicalProperty",
-    "superClasses" : [ "class4" ],
-    "instances" : 0
-  }, {
-    "id" : "class50",
-    "label" : {
-      "IRI-based" : "Donor"
-    },
-    "iri" : "http://w3id.org/semiconto/Donor",
-    "superClasses" : [ "class1" ],
-    "instances" : 0
-  }, {
-    "id" : "class27",
-    "label" : {
-      "IRI-based" : "ElectronThermalVelocity"
-    },
-    "iri" : "http://w3id.org/semiconto/ElectronThermalVelocity",
-    "superClasses" : [ "class24" ],
-    "instances" : 0
-  }, {
-    "id" : "class18",
-    "label" : {
-      "IRI-based" : "MolecularEntity"
-    },
-    "iri" : "http://w3id.org/semiconto/MolecularEntity",
-    "superClasses" : [ "class20" ],
+    "iri" : "http://w3id.org/semiconto/Matter",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
     "annotations" : {
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://emmo.info/emmo#EMMO_21205421_5783_4d3e_81e5_10c5d894a88a",
+        "value" : "http://emmo.info/emmo#EMMO_5b2222df_4da6_442f_8244_96e9e45887d1",
         "type" : "label"
-      }, {
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Matter",
+      "undefined" : "Matter"
+    },
+    "subClasses" : [ "73", "38" ],
+    "comment" : {
+      "undefined" : "A matter is a physical substance."
+    },
+    "id" : "74"
+  }, {
+    "iri" : "http://w3id.org/semiconto/ElectronThermalVelocity",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ElectronThermalVelocity"
+    },
+    "id" : "6",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/mdo/core/Calculation",
+    "baseIri" : "https://w3id.org/mdo/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Calculation"
+    },
+    "attributes" : [ "external" ],
+    "id" : "92"
+  }, {
+    "iri" : "http://w3id.org/semiconto/OpticalProperty",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OpticalProperty"
+    },
+    "subClasses" : [ "56", "93", "32", "53", "51" ],
+    "id" : "20",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://w3id.org/semiconto/ChemicalEntity",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ChemicalEntity"
+    },
+    "subClasses" : [ "37", "45" ],
+    "id" : "38",
+    "superClasses" : [ "74" ]
+  }, {
+    "iri" : "http://w3id.org/semiconto/OpticalPhotonEnergy",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OpticalPhotonEnergy"
+    },
+    "id" : "93",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://w3id.org/semiconto/BulkModulus",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BulkModulus"
+    },
+    "id" : "62",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://w3id.org/semiconto/Condition",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Condition"
+    },
+    "subClasses" : [ "26", "41" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://w3id.org/semiconto/IntrinsicSemiconductor",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IntrinsicSemiconductor"
+    },
+    "id" : "30",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "http://w3id.org/semiconto/ElectronDriftVelocity",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ElectronDriftVelocity"
+    },
+    "id" : "10",
+    "superClasses" : [ "2" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "57", "33" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "98"
+  }, {
+    "iri" : "http://w3id.org/semiconto/MeltingPoint",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MeltingPoint"
+    },
+    "id" : "63",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "66",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "96",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "79",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://w3id.org/semiconto/StaticDielectricConstant",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StaticDielectricConstant"
+    },
+    "id" : "53",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://w3id.org/semiconto/SemiconductorStructure",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SemiconductorStructure"
+    },
+    "id" : "59"
+  }, {
+    "iri" : "http://w3id.org/semiconto/SemiconductorMaterial",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SemiconductorMaterial"
+    },
+    "id" : "60"
+  }, {
+    "iri" : "http://w3id.org/semiconto/DiffusionCofficientElectrons",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DiffusionCofficientElectrons"
+    },
+    "id" : "8",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://w3id.org/semiconto/ExtrincSemiconductor",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExtrincSemiconductor"
+    },
+    "subClasses" : [ "36", "69" ],
+    "id" : "31",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "http://w3id.org/semiconto/P-TypeSemiconductor",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "P-TypeSemiconductor"
+    },
+    "id" : "69",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://w3id.org/semiconto/MolecularEntity",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
         "value" : "http://purl.obolibrary.org/obo/chebi#23367",
         "type" : "label"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://emmo.info/emmo#EMMO_21205421_5783_4d3e_81e5_10c5d894a88a",
+        "type" : "label"
       } ]
     },
-    "instances" : 0
+    "label" : {
+      "IRI-based" : "MolecularEntity"
+    },
+    "id" : "45",
+    "superClasses" : [ "38" ]
   }, {
-    "id" : "class38",
+    "iri" : "http://w3id.org/semiconto/HoleIonizationRate",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HoleIonizationRate"
+    },
+    "id" : "14",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://w3id.org/semiconto/ThermalDiffusivity",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ThermalDiffusivity"
+    },
+    "id" : "61",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://w3id.org/semiconto/ThermalConductivity",
+    "baseIri" : "http://w3id.org/semiconto",
+    "instances" : 0,
     "label" : {
       "IRI-based" : "ThermalConductivity"
     },
-    "iri" : "http://w3id.org/semiconto/ThermalConductivity",
-    "superClasses" : [ "class3" ],
-    "instances" : 0
+    "id" : "64",
+    "superClasses" : [ "4" ]
   }, {
-    "id" : "class28",
-    "label" : {
-      "IRI-based" : "QuantityKind"
-    },
-    "iri" : "http://qudt.org/schema/qudt/QuantityKind",
-    "attributes" : [ "external" ],
-    "instances" : 0
-  }, {
-    "id" : "class37",
-    "label" : {
-      "IRI-based" : "BulkModulus"
-    },
-    "iri" : "http://w3id.org/semiconto/BulkModulus",
-    "superClasses" : [ "class3" ],
-    "instances" : 0
-  }, {
-    "id" : "thing3",
-    "label" : {
-      "undefined" : "Thing"
-    },
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "instances" : 0
-  }, {
-    "id" : "thing2",
-    "label" : {
-      "undefined" : "Thing"
-    },
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "instances" : 0
-  }, {
-    "id" : "thing1",
-    "label" : {
-      "undefined" : "Thing"
-    },
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "instances" : 0
-  }, {
-    "id" : "class54",
-    "label" : {
-      "IRI-based" : "anonymous"
-    },
+    "iri" : "http://w3id.org/semiconto/DiffusionCofficientHoles",
+    "baseIri" : "http://w3id.org/semiconto",
     "instances" : 0,
-    "union" : [ "class50", "class29" ]
+    "label" : {
+      "IRI-based" : "DiffusionCofficientHoles"
+    },
+    "id" : "1",
+    "superClasses" : [ "2" ]
   } ],
   "property" : [ {
-    "id" : "property44",
+    "id" : "0",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "58",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "property43",
+    "id" : "65",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "property46",
+    "id" : "67",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "78",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "property2",
+    "id" : "82",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "property1",
+    "id" : "83",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "property29",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "property4",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "property3",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "property26",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "property25",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "property28",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "property27",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "property22",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "property21",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "property24",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "property23",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "property20",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "property48",
+    "id" : "84",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "property47",
+    "id" : "85",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "91",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "94",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "property37",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "property36",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "property39",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "property38",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "property33",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "property32",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "property35",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "property34",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "property42",
+    "id" : "95",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "property31",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "property30",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "property40",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "property41",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "property51",
+    "id" : "97",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "property9",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "property6",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "property5",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "property50",
+    "id" : "99",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "property8",
+    "id" : "100",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "property7",
+    "id" : "101",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "property19",
+    "id" : "102",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "property18",
+    "id" : "103",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "property15",
-    "type" : "rdfs:SubClassOf"
+    "id" : "104",
+    "type" : "owl:someValuesFrom"
   }, {
-    "id" : "property14",
-    "type" : "rdfs:SubClassOf"
+    "id" : "105",
+    "type" : "owl:someValuesFrom"
   }, {
-    "id" : "property17",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "property16",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "property11",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "property49",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "property10",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "property13",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "property12",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "property45",
+    "id" : "106",
     "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
-    "id" : "property44",
-    "label" : {
-      "IRI-based" : "wasAssociatedWith"
-    },
-    "iri" : "http://www.w3.org/ns/prov#wasAssociatedWith",
-    "attributes" : [ "external" ],
-    "domain" : "thing1",
-    "range" : "thing1"
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "0"
   }, {
-    "id" : "property43",
-    "label" : {
-      "IRI-based" : "hasSemiconductorType"
-    },
-    "iri" : "http://w3id.org/semiconto/hasSemiconductorType",
-    "domain" : "class5",
-    "range" : "class49"
+    "range" : "2",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "5"
   }, {
-    "id" : "property46",
-    "label" : {
-      "IRI-based" : "hasDopingParticipant"
-    },
-    "iri" : "http://w3id.org/semiconto/hasDopingParticipant",
-    "domain" : "class40",
-    "range" : "class54",
-    "cardinality" : 1
+    "range" : "2",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "7"
   }, {
-    "id" : "property2",
-    "label" : {
-      "IRI-based" : "Subclass Of"
-    },
-    "domain" : "class12",
-    "range" : "class3"
+    "range" : "2",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "9"
   }, {
-    "id" : "property1",
-    "label" : {
-      "IRI-based" : "Subclass Of"
-    },
-    "domain" : "class37",
-    "range" : "class3"
+    "range" : "2",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "11"
   }, {
-    "id" : "property29",
-    "label" : {
-      "IRI-based" : "Subclass Of"
-    },
-    "domain" : "class7",
-    "range" : "class33"
+    "range" : "2",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "13"
   }, {
-    "id" : "property4",
-    "label" : {
-      "IRI-based" : "Subclass Of"
-    },
-    "domain" : "class38",
-    "range" : "class3"
+    "range" : "2",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "15"
   }, {
-    "id" : "property3",
-    "label" : {
-      "IRI-based" : "Subclass Of"
-    },
-    "domain" : "class42",
-    "range" : "class3"
+    "range" : "18",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "17"
   }, {
-    "id" : "property26",
-    "label" : {
-      "IRI-based" : "Subclass Of"
-    },
-    "domain" : "class44",
-    "range" : "class6"
+    "range" : "18",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "19"
   }, {
-    "id" : "property25",
-    "label" : {
-      "IRI-based" : "Subclass Of"
-    },
-    "domain" : "class32",
-    "range" : "class24"
+    "range" : "23",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "21"
   }, {
-    "id" : "property28",
-    "label" : {
-      "IRI-based" : "Subclass Of"
-    },
-    "domain" : "class10",
-    "range" : "class33"
+    "range" : "18",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "24"
   }, {
-    "id" : "property27",
-    "label" : {
-      "IRI-based" : "Subclass Of"
-    },
-    "domain" : "class26",
-    "range" : "class6"
+    "range" : "28",
+    "domain" : "41",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "40"
   }, {
-    "id" : "property22",
-    "label" : {
-      "IRI-based" : "Subclass Of"
-    },
-    "domain" : "class15",
-    "range" : "class24"
+    "range" : "28",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "42"
   }, {
-    "id" : "property21",
-    "label" : {
-      "IRI-based" : "Subclass Of"
-    },
-    "domain" : "class27",
-    "range" : "class24"
+    "range" : "18",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "43"
   }, {
-    "id" : "property24",
-    "label" : {
-      "IRI-based" : "Subclass Of"
-    },
-    "domain" : "class13",
-    "range" : "class24"
+    "range" : "38",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "44"
   }, {
-    "id" : "property23",
-    "label" : {
-      "IRI-based" : "Subclass Of"
-    },
-    "domain" : "class19",
-    "range" : "class24"
+    "range" : "38",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "46"
   }, {
-    "id" : "property20",
-    "label" : {
-      "IRI-based" : "Subclass Of"
-    },
-    "domain" : "class47",
-    "range" : "class24"
+    "range" : "29",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "47"
   }, {
-    "id" : "property48",
-    "label" : {
-      "IRI-based" : "hasDonor"
-    },
-    "iri" : "http://w3id.org/semiconto/hasDonor",
-    "domain" : "thing1",
-    "range" : "thing1"
+    "range" : "29",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "48"
   }, {
-    "id" : "property47",
-    "label" : {
-      "IRI-based" : "hasDopingRelation"
-    },
-    "iri" : "http://w3id.org/semiconto/hasDopingRelation",
-    "domain" : "thing3",
-    "range" : "class40",
-    "cardinality" : 1
+    "range" : "20",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "49"
   }, {
-    "id" : "property37",
-    "label" : {
-      "IRI-based" : "Subclass Of"
-    },
-    "domain" : "class34",
-    "range" : "class11"
+    "range" : "20",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "50"
   }, {
-    "id" : "property36",
-    "label" : {
-      "IRI-based" : "Subclass Of"
-    },
-    "domain" : "class31",
-    "range" : "class41"
+    "range" : "20",
+    "domain" : "53",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "52"
   }, {
-    "id" : "property39",
-    "label" : {
-      "IRI-based" : "Subclass Of"
-    },
-    "domain" : "class2",
-    "range" : "class39"
-  }, {
-    "id" : "property38",
-    "label" : {
-      "IRI-based" : "Subclass Of"
-    },
-    "domain" : "class48",
-    "range" : "class11"
-  }, {
-    "id" : "property33",
-    "label" : {
-      "IRI-based" : "Subclass Of"
-    },
-    "domain" : "class35",
-    "range" : "class20"
-  }, {
-    "id" : "property32",
-    "label" : {
-      "IRI-based" : "Subclass Of"
-    },
-    "domain" : "class30",
-    "range" : "class33"
-  }, {
-    "id" : "property35",
-    "label" : {
-      "IRI-based" : "Subclass Of"
-    },
-    "domain" : "class20",
-    "range" : "class41"
-  }, {
-    "id" : "property34",
-    "label" : {
-      "IRI-based" : "Subclass Of"
-    },
-    "domain" : "class18",
-    "range" : "class20"
-  }, {
-    "id" : "property42",
-    "label" : {
-      "IRI-based" : "hasAcceptor"
-    },
-    "iri" : "http://w3id.org/semiconto/hasAcceptor",
-    "domain" : "thing1",
-    "range" : "thing1"
-  }, {
-    "id" : "property31",
-    "label" : {
-      "IRI-based" : "Subclass Of"
-    },
-    "domain" : "class25",
-    "range" : "class33"
-  }, {
-    "id" : "property30",
-    "label" : {
-      "IRI-based" : "Subclass Of"
-    },
-    "domain" : "class45",
-    "range" : "class33"
-  }, {
-    "id" : "property40",
-    "label" : {
-      "IRI-based" : "Subclass Of"
-    },
-    "domain" : "class6",
-    "range" : "class49"
-  }, {
-    "id" : "property41",
-    "label" : {
-      "IRI-based" : "Subclass Of"
-    },
-    "domain" : "class36",
-    "range" : "class49"
-  }, {
-    "id" : "property51",
-    "label" : {
-      "IRI-based" : "hasCondition"
-    },
-    "iri" : "http://w3id.org/semiconto/hasCondition",
-    "domain" : "class14",
-    "range" : "class11"
-  }, {
-    "id" : "property9",
-    "label" : {
-      "IRI-based" : "Subclass Of"
-    },
-    "domain" : "class33",
-    "range" : "class4"
-  }, {
-    "id" : "property6",
-    "label" : {
-      "IRI-based" : "Subclass Of"
-    },
-    "domain" : "class46",
-    "range" : "class3"
-  }, {
-    "id" : "property5",
-    "label" : {
-      "IRI-based" : "Subclass Of"
-    },
-    "domain" : "class21",
-    "range" : "class3"
-  }, {
-    "id" : "property50",
-    "label" : {
-      "IRI-based" : "relatesToMaterial"
-    },
     "iri" : "http://w3id.org/semiconto/relatesToMaterial",
+    "baseIri" : "http://w3id.org/semiconto",
+    "range" : "60",
     "annotations" : {
       "seeAlso" : [ {
         "identifier" : "seeAlso",
@@ -1132,107 +1046,211 @@
         "type" : "label"
       } ]
     },
-    "domain" : "class22",
-    "range" : "class5"
-  }, {
-    "id" : "property8",
     "label" : {
-      "IRI-based" : "Subclass Of"
+      "IRI-based" : "relatesToMaterial"
     },
-    "domain" : "class51",
-    "range" : "class4"
+    "domain" : "59",
+    "attributes" : [ "object" ],
+    "id" : "58"
   }, {
-    "id" : "property7",
+    "iri" : "http://w3id.org/semiconto/hasAcceptor",
+    "baseIri" : "http://w3id.org/semiconto",
+    "range" : "66",
     "label" : {
-      "IRI-based" : "Subclass Of"
+      "IRI-based" : "hasAcceptor"
     },
-    "domain" : "class24",
-    "range" : "class4"
+    "domain" : "66",
+    "attributes" : [ "object" ],
+    "id" : "65"
   }, {
-    "id" : "property19",
+    "range" : "27",
+    "domain" : "41",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "67"
+  }, {
+    "range" : "31",
+    "domain" : "69",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "68"
+  }, {
+    "range" : "31",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "70"
+  }, {
+    "range" : "27",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "71"
+  }, {
+    "range" : "27",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "72"
+  }, {
+    "range" : "4",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "75"
+  }, {
+    "range" : "4",
+    "domain" : "64",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://w3id.org/semiconto/hasDopingRelation",
+    "baseIri" : "http://w3id.org/semiconto",
+    "range" : "77",
     "label" : {
-      "IRI-based" : "Subclass Of"
+      "IRI-based" : "hasDopingRelation"
     },
-    "domain" : "class8",
-    "range" : "class24"
+    "domain" : "79",
+    "attributes" : [ "object" ],
+    "id" : "78"
   }, {
-    "id" : "property18",
+    "range" : "4",
+    "domain" : "63",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "82"
+  }, {
+    "range" : "4",
+    "domain" : "39",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://w3id.org/semiconto/hasSemiconductorType",
+    "baseIri" : "http://w3id.org/semiconto",
+    "range" : "29",
     "label" : {
-      "IRI-based" : "Subclass Of"
+      "IRI-based" : "hasSemiconductorType"
     },
-    "domain" : "class23",
-    "range" : "class24"
+    "domain" : "60",
+    "attributes" : [ "object" ],
+    "id" : "84"
   }, {
-    "id" : "property15",
+    "range" : "34",
+    "domain" : "33",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "85"
+  }, {
+    "range" : "4",
+    "domain" : "62",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "86"
+  }, {
+    "range" : "4",
+    "domain" : "61",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "87"
+  }, {
+    "range" : "2",
+    "domain" : "54",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "88"
+  }, {
+    "range" : "2",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "89"
+  }, {
+    "range" : "34",
+    "domain" : "57",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "90"
+  }, {
+    "range" : "2",
+    "domain" : "55",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://w3id.org/semiconto/hasDonor",
+    "baseIri" : "http://w3id.org/semiconto",
+    "range" : "66",
     "label" : {
-      "IRI-based" : "Subclass Of"
+      "IRI-based" : "hasDonor"
     },
-    "domain" : "class48",
-    "range" : "class17"
+    "domain" : "66",
+    "attributes" : [ "object" ],
+    "id" : "94"
   }, {
-    "id" : "property14",
-    "label" : {
-      "IRI-based" : "Subclass Of"
-    },
-    "domain" : "class4",
-    "range" : "class17"
-  }, {
-    "id" : "property17",
-    "label" : {
-      "IRI-based" : "Subclass Of"
-    },
-    "domain" : "class9",
-    "range" : "class24"
-  }, {
-    "id" : "property16",
-    "label" : {
-      "IRI-based" : "Subclass Of"
-    },
-    "domain" : "class16",
-    "range" : "class24"
-  }, {
-    "id" : "property11",
-    "label" : {
-      "IRI-based" : "Subclass Of"
-    },
-    "domain" : "class29",
-    "range" : "class1"
-  }, {
-    "id" : "property49",
-    "label" : {
-      "IRI-based" : "hasExperimentalOutput"
-    },
-    "iri" : "http://w3id.org/semiconto/hasExperimentalOutput",
-    "domain" : "class14",
-    "range" : "thing2"
-  }, {
-    "id" : "property10",
-    "label" : {
-      "IRI-based" : "Subclass Of"
-    },
-    "domain" : "class3",
-    "range" : "class4"
-  }, {
-    "id" : "property13",
-    "label" : {
-      "IRI-based" : "Subclass Of"
-    },
-    "domain" : "class34",
-    "range" : "class17"
-  }, {
-    "id" : "property12",
-    "label" : {
-      "IRI-based" : "Subclass Of"
-    },
-    "domain" : "class50",
-    "range" : "class1"
-  }, {
-    "id" : "property45",
+    "iri" : "http://w3id.org/semiconto/hasExperimentalInput",
+    "baseIri" : "http://w3id.org/semiconto",
+    "range" : "96",
     "label" : {
       "IRI-based" : "hasExperimentalInput"
     },
-    "iri" : "http://w3id.org/semiconto/hasExperimentalInput",
-    "domain" : "class14",
-    "range" : "thing2"
+    "domain" : "80",
+    "attributes" : [ "object" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://w3id.org/semiconto/hasDopingParticipant",
+    "baseIri" : "http://w3id.org/semiconto",
+    "range" : "98",
+    "label" : {
+      "IRI-based" : "hasDopingParticipant"
+    },
+    "domain" : "77",
+    "attributes" : [ "object" ],
+    "id" : "97"
+  }, {
+    "iri" : "http://w3id.org/semiconto/hasCondition",
+    "baseIri" : "http://w3id.org/semiconto",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "hasCondition"
+    },
+    "domain" : "80",
+    "attributes" : [ "object" ],
+    "id" : "99"
+  }, {
+    "range" : "74",
+    "domain" : "73",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "100"
+  }, {
+    "range" : "74",
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "101"
+  }, {
+    "range" : "20",
+    "domain" : "56",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "102"
+  }, {
+    "range" : "20",
+    "domain" : "93",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "103"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#wasAssociatedWith",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "wasAssociatedWith"
+    },
+    "domain" : "80",
+    "attributes" : [ "someValues", "object", "external" ],
+    "id" : "104"
+  }, {
+    "iri" : "http://w3id.org/semiconto/hasDopingParticipant",
+    "baseIri" : "http://w3id.org/semiconto",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "hasDopingParticipant"
+    },
+    "domain" : "77",
+    "attributes" : [ "someValues", "object" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://w3id.org/semiconto/hasExperimentalOutput",
+    "baseIri" : "http://w3id.org/semiconto",
+    "range" : "96",
+    "label" : {
+      "IRI-based" : "hasExperimentalOutput"
+    },
+    "domain" : "80",
+    "attributes" : [ "object" ],
+    "id" : "106"
   } ]
 }
