@@ -1,6 +1,6 @@
 # SemicONTO
 
-SemicONTO (***Semic***onductor ***ONTO***logy) is an ontology...  
+SemicONTO (***Semic***onductor ***ONTO***logy) is an ontology for the semiconductor domain. 
 
 
 ### What kinds of semiconductors are you working on? How do you classify different semiconductors?
