@@ -6,48 +6,35 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:vann="http://purl.org/vocab/vann/"
 >
-  <rdf:Description rdf:about="http://w3id.org/semiconto/ExtrincSemiconductor">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/SemiconductorKind"/>
-    <rdfs:subClassOf rdf:nodeID="n569c2086070d4c658791178059ca277ab10"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/P-TypeSemiconductor">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/ExtrincSemiconductor"/>
-    <rdfs:subClassOf rdf:nodeID="n569c2086070d4c658791178059ca277ab13"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/mdo/core/Calculation">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/ThermalDiffusivity">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/ThermalProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/ChemicalEntity">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/Matter"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/OpticalProperty">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/Property"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/Acceptor">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/Dopant"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/HoleIonizationRate">
+  <rdf:Description rdf:about="http://w3id.org/semiconto/HoleThermalVelocity">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/ElectricalProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/MechanicalProperty">
+  <rdf:Description rdf:nodeID="n68569b2ec2374c2295285d5ec5742c64b8">
+    <rdf:first rdf:resource="http://w3id.org/semiconto/Donor"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n68569b2ec2374c2295285d5ec5742c64b9">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasAssociatedWith"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/semiconto/ExperimentalEquipment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/semiconto/ThermalProperty">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/Property"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n569c2086070d4c658791178059ca277ab13">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/semiconto/hasDopingRelation"/>
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:nodeID="n569c2086070d4c658791178059ca277ab14"/>
+  <rdf:Description rdf:about="http://w3id.org/semiconto/ChemicalSubstance">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/ChemicalEntity"/>
+    <rdfs:seeAlso>http://emmo.info/emmo#EMMO_df96cbb6_b5ee_4222_8eab_b3675df24bea</rdfs:seeAlso>
+    <rdfs:seeAlso>http://purl.obolibrary.org/obo/chebi#59999</rdfs:seeAlso>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n68569b2ec2374c2295285d5ec5742c64b7">
+    <rdf:first rdf:resource="http://w3id.org/semiconto/Acceptor"/>
+    <rdf:rest rdf:nodeID="n68569b2ec2374c2295285d5ec5742c64b8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/modified">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://w3id.org/semiconto/">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
@@ -61,79 +48,119 @@
     <rdfs:seeAlso>https://github.com/huanyu-li/SemicONTO</rdfs:seeAlso>
     <owl:versionInfo>0.1</owl:versionInfo>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/MobilityElectrons">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/ElectricalProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/Material">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/Matter"/>
-    <rdfs:label>Material</rdfs:label>
-    <rdfs:seeAlso>http://emmo.info/emmo#EMMO_4207e895_8b83_4318_996a_72cfb32acd94</rdfs:seeAlso>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n569c2086070d4c658791178059ca277ab14">
+  <rdf:Description rdf:nodeID="n68569b2ec2374c2295285d5ec5742c64b14">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="http://w3id.org/semiconto/hasDopingParticipant"/>
     <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     <owl:onClass rdf:resource="http://w3id.org/semiconto/Acceptor"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n569c2086070d4c658791178059ca277ab4">
+  <rdf:Description rdf:about="http://w3id.org/semiconto/InfraredRefractiveIndex">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/OpticalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n68569b2ec2374c2295285d5ec5742c64b2">
+    <rdf:first rdf:resource="http://w3id.org/semiconto/Acceptor"/>
+    <rdf:rest rdf:nodeID="n68569b2ec2374c2295285d5ec5742c64b3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n68569b2ec2374c2295285d5ec5742c64b4">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="http://w3id.org/semiconto/hasDopingParticipant"/>
     <owl:someValuesFrom rdf:resource="http://w3id.org/semiconto/Dopant"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n569c2086070d4c658791178059ca277ab2">
-    <rdf:first rdf:resource="http://w3id.org/semiconto/Acceptor"/>
-    <rdf:rest rdf:nodeID="n569c2086070d4c658791178059ca277ab3"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/hasExperimentalInput">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://w3id.org/semiconto/Experiment"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n569c2086070d4c658791178059ca277ab10">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/semiconto/hasDopingRelation"/>
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:resource="http://w3id.org/semiconto/DopingRelation"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/DiffusionCofficientElectrons">
+  <rdf:Description rdf:about="http://w3id.org/semiconto/ExperimentalEquipment">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/ElectricalProperty"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n569c2086070d4c658791178059ca277ab6">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="n569c2086070d4c658791178059ca277ab7"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/hasExperimentalOutput">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://w3id.org/semiconto/Experiment"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/ThermalProperty">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/Property"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/StaticDielectricConstant">
+  <rdf:Description rdf:about="http://w3id.org/semiconto/OpticalPhotonEnergy">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/OpticalProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n569c2086070d4c658791178059ca277ab5">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/semiconto/hasDopingParticipant"/>
-    <owl:someValuesFrom rdf:nodeID="n569c2086070d4c658791178059ca277ab6"/>
+  <rdf:Description rdf:about="http://w3id.org/semiconto/OpticalProperty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/Property"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n569c2086070d4c658791178059ca277ab12">
+  <rdf:Description rdf:nodeID="n68569b2ec2374c2295285d5ec5742c64b13">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/semiconto/hasDopingRelation"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:nodeID="n68569b2ec2374c2295285d5ec5742c64b14"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/semiconto/SpecificHeat">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/ThermalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/semiconto/ThermalDiffusivity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/ThermalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/semiconto/AbsorptionCofficient">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/OpticalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n68569b2ec2374c2295285d5ec5742c64b12">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="http://w3id.org/semiconto/hasDopingParticipant"/>
     <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
     <owl:onClass rdf:resource="http://w3id.org/semiconto/Donor"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/ElectronDriftVelocity">
+  <rdf:Description rdf:about="http://w3id.org/semiconto/hasDopingParticipant">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/semiconto/DopingRelation"/>
+    <rdfs:range rdf:nodeID="n68569b2ec2374c2295285d5ec5742c64b1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n68569b2ec2374c2295285d5ec5742c64b5">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/semiconto/hasDopingParticipant"/>
+    <owl:someValuesFrom rdf:nodeID="n68569b2ec2374c2295285d5ec5742c64b6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/semiconto/ExtrincSemiconductor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/SemiconductorKind"/>
+    <rdfs:subClassOf rdf:nodeID="n68569b2ec2374c2295285d5ec5742c64b10"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/semiconto/N-TypeSemiconductor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/ExtrincSemiconductor"/>
+    <rdfs:subClassOf rdf:nodeID="n68569b2ec2374c2295285d5ec5742c64b11"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/semiconto/hasExperimentalOutput">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/semiconto/Experiment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/semiconto/MobilityHoles">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/ElectricalProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/ElectronThermalVelocity">
+  <rdf:Description rdf:about="http://w3id.org/semiconto/StaticDielectricConstant">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/ElectricalProperty"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/OpticalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/description">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/semiconto/ChemicalEntity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/Matter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/semiconto/MolecularEntity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/ChemicalEntity"/>
+    <rdfs:seeAlso>http://emmo.info/emmo#EMMO_21205421_5783_4d3e_81e5_10c5d894a88a</rdfs:seeAlso>
+    <rdfs:seeAlso>http://purl.obolibrary.org/obo/chebi#23367</rdfs:seeAlso>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/semiconto/SemiconductorMaterial">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/prov#wasAssociatedWith">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/semiconto/P-TypeSemiconductor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/ExtrincSemiconductor"/>
+    <rdfs:subClassOf rdf:nodeID="n68569b2ec2374c2295285d5ec5742c64b13"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://w3id.org/semiconto/relatesToMaterial">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -141,98 +168,10 @@
     <rdfs:range rdf:resource="http://w3id.org/semiconto/SemiconductorMaterial"/>
     <rdfs:seeAlso>https://w3id.org/mdo/core/relatesToMaterial</rdfs:seeAlso>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/SpecificHeat">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/ThermalProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/Experiment">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="n569c2086070d4c658791178059ca277ab9"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/AtmosphericPressureCondition">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt/Quantity"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/Condition"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/N-TypeSemiconductor">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/ExtrincSemiconductor"/>
-    <rdfs:subClassOf rdf:nodeID="n569c2086070d4c658791178059ca277ab11"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/SemiconductorKind">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/hasCondition">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://w3id.org/semiconto/Experiment"/>
-    <rdfs:range rdf:resource="http://w3id.org/semiconto/Condition"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n569c2086070d4c658791178059ca277ab1">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="n569c2086070d4c658791178059ca277ab2"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/BreakdownField">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/ElectricalProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/DopingRelation">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="n569c2086070d4c658791178059ca277ab4"/>
-    <rdfs:subClassOf rdf:nodeID="n569c2086070d4c658791178059ca277ab5"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n569c2086070d4c658791178059ca277ab8">
-    <rdf:first rdf:resource="http://w3id.org/semiconto/Donor"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/DiffusionCofficientHoles">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/ElectricalProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/Dopant">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/ns/prov#Agent">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/MeltingPoint">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/ThermalProperty"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://w3id.org/semiconto/TemperatureCondition">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt/Quantity"/>
     <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/Condition"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/AbsorptionCofficient">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/OpticalProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/ElectricalProperty">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/Property"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/creator">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/license">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/hasDopingRelation">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:range rdf:resource="http://w3id.org/semiconto/DopingRelation"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n569c2086070d4c658791178059ca277ab11">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/semiconto/hasDopingRelation"/>
-    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
-    <owl:onClass rdf:nodeID="n569c2086070d4c658791178059ca277ab12"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/hasAcceptor">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/HoleThermalVelocity">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/ElectricalProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://w3id.org/semiconto/ThermalExpansion">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -244,14 +183,23 @@
     <rdfs:label>Matter</rdfs:label>
     <rdfs:seeAlso>http://emmo.info/emmo#EMMO_5b2222df_4da6_442f_8244_96e9e45887d1</rdfs:seeAlso>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/contributor">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  <rdf:Description rdf:about="http://w3id.org/semiconto/ElectronDriftVelocity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/ElectricalProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n569c2086070d4c658791178059ca277ab3">
-    <rdf:first rdf:resource="http://w3id.org/semiconto/Donor"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  <rdf:Description rdf:about="http://w3id.org/semiconto/ElectricalProperty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/Property"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/InfraredRefractiveIndex">
+  <rdf:Description rdf:about="http://w3id.org/semiconto/Acceptor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/Dopant"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n68569b2ec2374c2295285d5ec5742c64b6">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="n68569b2ec2374c2295285d5ec5742c64b7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/semiconto/RadiativeRecombinationCofficient">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/OpticalProperty"/>
   </rdf:Description>
@@ -259,116 +207,168 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt/Quantity"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/ChemicalSubstance">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/ChemicalEntity"/>
-    <rdfs:seeAlso>http://emmo.info/emmo#EMMO_df96cbb6_b5ee_4222_8eab_b3675df24bea</rdfs:seeAlso>
-    <rdfs:seeAlso>http://purl.obolibrary.org/obo/chebi#59999</rdfs:seeAlso>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n569c2086070d4c658791178059ca277ab9">
+  <rdf:Description rdf:nodeID="n68569b2ec2374c2295285d5ec5742c64b10">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasAssociatedWith"/>
-    <owl:someValuesFrom rdf:resource="http://w3id.org/semiconto/ExperimentalEquipment"/>
+    <owl:onProperty rdf:resource="http://w3id.org/semiconto/hasDopingRelation"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:resource="http://w3id.org/semiconto/DopingRelation"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/MobilityHoles">
+  <rdf:Description rdf:nodeID="n68569b2ec2374c2295285d5ec5742c64b11">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/semiconto/hasDopingRelation"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onClass rdf:nodeID="n68569b2ec2374c2295285d5ec5742c64b12"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/semiconto/ThermalConductivity">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/ElectricalProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/OpticalPhotonEnergy">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/OpticalProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/hasDopingParticipant">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://w3id.org/semiconto/DopingRelation"/>
-    <rdfs:range rdf:nodeID="n569c2086070d4c658791178059ca277ab1"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/MolecularEntity">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/ChemicalEntity"/>
-    <rdfs:seeAlso>http://emmo.info/emmo#EMMO_21205421_5783_4d3e_81e5_10c5d894a88a</rdfs:seeAlso>
-    <rdfs:seeAlso>http://purl.obolibrary.org/obo/chebi#23367</rdfs:seeAlso>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/ThermalProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://w3id.org/semiconto/hasSemiconductorType">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:domain rdf:resource="http://w3id.org/semiconto/SemiconductorMaterial"/>
     <rdfs:range rdf:resource="http://w3id.org/semiconto/SemiconductorKind"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/ExperimentalEquipment">
+  <rdf:Description rdf:nodeID="n68569b2ec2374c2295285d5ec5742c64b3">
+    <rdf:first rdf:resource="http://w3id.org/semiconto/Donor"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/semiconto/DopingRelation">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    <rdfs:subClassOf rdf:nodeID="n68569b2ec2374c2295285d5ec5742c64b4"/>
+    <rdfs:subClassOf rdf:nodeID="n68569b2ec2374c2295285d5ec5742c64b5"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/description">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/BulkModulus">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/ThermalProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n569c2086070d4c658791178059ca277ab7">
-    <rdf:first rdf:resource="http://w3id.org/semiconto/Acceptor"/>
-    <rdf:rest rdf:nodeID="n569c2086070d4c658791178059ca277ab8"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/Condition">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/Donor">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/Dopant"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/SemiconductorMaterial">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/ElectronIonizationRate">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/ElectricalProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/hasDonor">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/RadiativeRecombinationCofficient">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/OpticalProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/ns/prov#wasAssociatedWith">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/modified">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://qudt.org/schema/qudt/QuantityKind">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/rights">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/ThermalConductivity">
+  <rdf:Description rdf:about="http://w3id.org/semiconto/MeltingPoint">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/ThermalProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/semiconto/SemiconductorStructure">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://w3id.org/semiconto/IntrinsicSemiconductor">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/SemiconductorKind"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/title">
+  <rdf:Description rdf:about="http://w3id.org/semiconto/BreakdownField">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/ElectricalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/semiconto/Donor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/Dopant"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/semiconto/AtmosphericPressureCondition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://qudt.org/schema/qudt/Quantity"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/Condition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/semiconto/Experiment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="n68569b2ec2374c2295285d5ec5742c64b9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/semiconto/hasDonor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/semiconto/hasDopingRelation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://w3id.org/semiconto/DopingRelation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/semiconto/BulkModulus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/ThermalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/semiconto/Dopant">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/semiconto/Material">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/Matter"/>
+    <rdfs:label>Material</rdfs:label>
+    <rdfs:seeAlso>http://emmo.info/emmo#EMMO_4207e895_8b83_4318_996a_72cfb32acd94</rdfs:seeAlso>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/license">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/semiconto/hasExperimentalInput">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/semiconto/Experiment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/semiconto/hasCondition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/semiconto/Experiment"/>
+    <rdfs:range rdf:resource="http://w3id.org/semiconto/Condition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/semiconto/MechanicalProperty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/semiconto/HoleIonizationRate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/ElectricalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/semiconto/ElectronIonizationRate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/ElectricalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/rights">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/contributor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qudt.org/schema/qudt/Quantity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/semiconto/DiffusionCofficientElectrons">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/ElectricalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/semiconto/ElectronThermalVelocity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/ElectricalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://qudt.org/schema/qudt/QuantityKind">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n68569b2ec2374c2295285d5ec5742c64b1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="n68569b2ec2374c2295285d5ec5742c64b2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mdo/core/Calculation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/semiconto/DiffusionCofficientHoles">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/ElectricalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/semiconto/SemiconductorKind">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/semiconto/SemiconductorStructure">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/semiconto/Condition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/created">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://purl.org/dc/terms/isVersionOf">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/created">
+  <rdf:Description rdf:about="http://w3id.org/semiconto/MobilityElectrons">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/semiconto/ElectricalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/prov#Agent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/title">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://qudt.org/schema/qudt/Quantity">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  <rdf:Description rdf:about="http://w3id.org/semiconto/hasAcceptor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
 </rdf:RDF>
