@@ -1,440 +1,6 @@
 [
   {
-    "@id": "http://w3id.org/semiconto/IntrinsicSemiconductor",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/semiconto/SemiconductorKind"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.w3.org/ns/prov#wasAssociatedWith",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/ElectronDriftVelocity",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/semiconto/ElectricalProperty"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/HoleIonizationRate",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/semiconto/ElectricalProperty"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/ElectronIonizationRate",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/semiconto/ElectricalProperty"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/ThermalProperty",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/semiconto/Property"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/terms/creator",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/Experiment",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "_:n68569b2ec2374c2295285d5ec5742c64b9"
-      }
-    ]
-  },
-  {
-    "@id": "_:n68569b2ec2374c2295285d5ec5742c64b9",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://www.w3.org/ns/prov#wasAssociatedWith"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://w3id.org/semiconto/ExperimentalEquipment"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/vocab/vann/preferredNamespaceUri",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/MobilityHoles",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/semiconto/ElectricalProperty"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/ThermalConductivity",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/semiconto/ThermalProperty"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/OpticalPhotonEnergy",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/semiconto/OpticalProperty"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/Material",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Material"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@value": "http://emmo.info/emmo#EMMO_4207e895_8b83_4318_996a_72cfb32acd94"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/semiconto/Matter"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/Property",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://qudt.org/schema/qudt/Quantity"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/hasCondition",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "http://w3id.org/semiconto/Experiment"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://w3id.org/semiconto/Condition"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/OpticalProperty",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/semiconto/Property"
-      }
-    ]
-  },
-  {
-    "@id": "http://qudt.org/schema/qudt/QuantityKind",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/MolecularEntity",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@value": "http://emmo.info/emmo#EMMO_21205421_5783_4d3e_81e5_10c5d894a88a"
-      },
-      {
-        "@value": "http://purl.obolibrary.org/obo/chebi#23367"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/semiconto/ChemicalEntity"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/MobilityElectrons",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/semiconto/ElectricalProperty"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/ExtrincSemiconductor",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/semiconto/SemiconductorKind"
-      },
-      {
-        "@id": "_:n68569b2ec2374c2295285d5ec5742c64b10"
-      }
-    ]
-  },
-  {
-    "@id": "_:n68569b2ec2374c2295285d5ec5742c64b10",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onClass": [
-      {
-        "@id": "http://w3id.org/semiconto/DopingRelation"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/semiconto/hasDopingRelation"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-        "@value": "1"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/StaticDielectricConstant",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/semiconto/OpticalProperty"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/ThermalExpansion",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/semiconto/ThermalProperty"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/hasDonor",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/AtmosphericPressureCondition",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://qudt.org/schema/qudt/Quantity"
-      },
-      {
-        "@id": "http://w3id.org/semiconto/Condition"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/Matter",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#comment": [
-      {
-        "@value": "A matter is a physical substance."
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Matter"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@value": "http://emmo.info/emmo#EMMO_5b2222df_4da6_442f_8244_96e9e45887d1"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/Condition",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/SemiconductorKind",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/terms/created",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "https://w3id.org/mdo/core/Calculation",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/terms/rights",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://purl.org/vocab/vann/preferredNamespacePrefix",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/ExperimentalEquipment",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/ns/prov#Agent"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/TemperatureCondition",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://qudt.org/schema/qudt/Quantity"
-      },
-      {
-        "@id": "http://w3id.org/semiconto/Condition"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/HoleThermalVelocity",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/semiconto/ElectricalProperty"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/hasSemiconductorType",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "http://w3id.org/semiconto/SemiconductorMaterial"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://w3id.org/semiconto/SemiconductorKind"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/ChemicalSubstance",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@value": "http://emmo.info/emmo#EMMO_df96cbb6_b5ee_4222_8eab_b3675df24bea"
-      },
-      {
-        "@value": "http://purl.obolibrary.org/obo/chebi#59999"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/semiconto/ChemicalEntity"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/BulkModulus",
+    "@id": "http://w3id.org/semiconto/SpecificHeat",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -456,21 +22,145 @@
     ]
   },
   {
+    "@id": "http://w3id.org/semiconto/hasExperimentalInput",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/semiconto/Experiment"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/semiconto/DiffusionCofficientElectrons",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/semiconto/ElectricalProperty"
+      }
+    ]
+  },
+  {
     "@id": "http://w3id.org/semiconto/hasAcceptor",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ]
   },
   {
-    "@id": "http://purl.org/dc/terms/modified",
+    "@id": "http://w3id.org/semiconto/BulkModulus",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/semiconto/ThermalProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/semiconto/P-TypeSemiconductor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/semiconto/ExtrincSemiconductor"
+      },
+      {
+        "@id": "_:nfabce40527b44d57b98cf97943e8e549b13"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfabce40527b44d57b98cf97943e8e549b13",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "_:nfabce40527b44d57b98cf97943e8e549b14"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/semiconto/hasDopingRelation"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfabce40527b44d57b98cf97943e8e549b14",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "http://w3id.org/semiconto/Acceptor"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/semiconto/hasDopingParticipant"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/semiconto/OpticalProperty",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/semiconto/Property"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/isVersionOf",
     "@type": [
       "http://www.w3.org/2002/07/owl#AnnotationProperty"
     ]
   },
   {
-    "@id": "http://purl.org/dc/terms/license",
+    "@id": "http://purl.org/vocab/vann/preferredNamespaceUri",
     "@type": [
       "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/semiconto/OpticalPhotonEnergy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/semiconto/OpticalProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/semiconto/ThermalProperty",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/semiconto/Property"
+      }
     ]
   },
   {
@@ -485,53 +175,34 @@
     ]
   },
   {
-    "@id": "http://w3id.org/semiconto/DopingRelation",
+    "@id": "http://w3id.org/semiconto/AbsorptionCofficient",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:n68569b2ec2374c2295285d5ec5742c64b4"
-      },
-      {
-        "@id": "_:n68569b2ec2374c2295285d5ec5742c64b5"
+        "@id": "http://w3id.org/semiconto/OpticalProperty"
       }
     ]
   },
   {
-    "@id": "_:n68569b2ec2374c2295285d5ec5742c64b4",
+    "@id": "http://w3id.org/semiconto/hasDopingParticipant",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://w3id.org/semiconto/hasDopingParticipant"
+        "@id": "http://w3id.org/semiconto/DopingRelation"
       }
     ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+    "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://w3id.org/semiconto/Dopant"
-      }
-    ]
-  },
-  {
-    "@id": "_:n68569b2ec2374c2295285d5ec5742c64b5",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/semiconto/hasDopingParticipant"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "_:n68569b2ec2374c2295285d5ec5742c64b6"
+        "@id": "_:nfabce40527b44d57b98cf97943e8e549b1"
       }
     ]
   },
   {
-    "@id": "_:n68569b2ec2374c2295285d5ec5742c64b6",
+    "@id": "_:nfabce40527b44d57b98cf97943e8e549b1",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -549,13 +220,30 @@
     ]
   },
   {
-    "@id": "http://w3id.org/semiconto/hasExperimentalInput",
+    "@id": "http://purl.org/dc/terms/title",
     "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/semiconto/MeltingPoint",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
     ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://w3id.org/semiconto/Experiment"
+        "@id": "http://w3id.org/semiconto/ThermalProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/semiconto/Donor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/semiconto/Dopant"
       }
     ]
   },
@@ -566,131 +254,25 @@
     ]
   },
   {
-    "@id": "http://w3id.org/semiconto/MechanicalProperty",
+    "@id": "http://purl.org/dc/terms/contributor",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/semiconto/Property"
-      }
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
     ]
   },
   {
-    "@id": "http://w3id.org/semiconto/hasDopingRelation",
+    "@id": "http://w3id.org/semiconto/hasDonor",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://w3id.org/semiconto/DopingRelation"
-      }
     ]
   },
   {
-    "@id": "http://w3id.org/semiconto/ChemicalEntity",
+    "@id": "http://w3id.org/semiconto/ThermalDiffusivity",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://w3id.org/semiconto/Matter"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/relatesToMaterial",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "http://w3id.org/semiconto/SemiconductorStructure"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://w3id.org/semiconto/SemiconductorMaterial"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@value": "https://w3id.org/mdo/core/relatesToMaterial"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.w3.org/ns/prov#Agent",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/AbsorptionCofficient",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/semiconto/OpticalProperty"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/N-TypeSemiconductor",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/semiconto/ExtrincSemiconductor"
-      },
-      {
-        "@id": "_:n68569b2ec2374c2295285d5ec5742c64b11"
-      }
-    ]
-  },
-  {
-    "@id": "_:n68569b2ec2374c2295285d5ec5742c64b11",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onClass": [
-      {
-        "@id": "_:n68569b2ec2374c2295285d5ec5742c64b12"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/semiconto/hasDopingRelation"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-        "@value": "1"
-      }
-    ]
-  },
-  {
-    "@id": "_:n68569b2ec2374c2295285d5ec5742c64b12",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onClass": [
-      {
-        "@id": "http://w3id.org/semiconto/Donor"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/semiconto/hasDopingParticipant"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-        "@value": "1"
+        "@id": "http://w3id.org/semiconto/ThermalProperty"
       }
     ]
   },
@@ -706,24 +288,13 @@
     ]
   },
   {
-    "@id": "http://w3id.org/semiconto/ThermalDiffusivity",
+    "@id": "http://w3id.org/semiconto/ElectronIonizationRate",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://w3id.org/semiconto/ThermalProperty"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/hasExperimentalOutput",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "http://w3id.org/semiconto/Experiment"
+        "@id": "http://w3id.org/semiconto/ElectricalProperty"
       }
     ]
   },
@@ -779,13 +350,64 @@
     ]
   },
   {
-    "@id": "http://purl.org/dc/terms/contributor",
+    "@id": "http://w3id.org/semiconto/Acceptor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/semiconto/Dopant"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/vocab/vann/preferredNamespacePrefix",
     "@type": [
       "http://www.w3.org/2002/07/owl#AnnotationProperty"
     ]
   },
   {
-    "@id": "http://purl.org/dc/terms/title",
+    "@id": "http://w3id.org/semiconto/MechanicalProperty",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/semiconto/Property"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/semiconto/BreakdownField",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/semiconto/ElectricalProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/semiconto/SemiconductorKind",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/QuantityKind",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/semiconto/SemiconductorMaterial",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/description",
     "@type": [
       "http://www.w3.org/2002/07/owl#AnnotationProperty"
     ]
@@ -802,58 +424,131 @@
     ]
   },
   {
-    "@id": "http://purl.org/dc/terms/isVersionOf",
+    "@id": "https://w3id.org/mdo/core/Calculation",
     "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+      "http://www.w3.org/2002/07/owl#Class"
     ]
   },
   {
-    "@id": "http://purl.org/dc/terms/description",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/Acceptor",
+    "@id": "http://w3id.org/semiconto/StaticDielectricConstant",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/semiconto/OpticalProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#Agent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/semiconto/ExperimentalEquipment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Agent"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/semiconto/hasDopingRelation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/semiconto/DopingRelation"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/semiconto/HoleThermalVelocity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/semiconto/ElectricalProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/semiconto/MobilityHoles",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/semiconto/ElectricalProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/semiconto/ChemicalEntity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/semiconto/Matter"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/semiconto/DopingRelation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "_:nfabce40527b44d57b98cf97943e8e549b4"
+      },
+      {
+        "@id": "_:nfabce40527b44d57b98cf97943e8e549b5"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfabce40527b44d57b98cf97943e8e549b4",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/semiconto/hasDopingParticipant"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
       {
         "@id": "http://w3id.org/semiconto/Dopant"
       }
     ]
   },
   {
-    "@id": "http://qudt.org/schema/qudt/Quantity",
+    "@id": "_:nfabce40527b44d57b98cf97943e8e549b5",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/SemiconductorMaterial",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/hasDopingParticipant",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
+      "http://www.w3.org/2002/07/owl#Restriction"
     ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
+    "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "http://w3id.org/semiconto/DopingRelation"
+        "@id": "http://w3id.org/semiconto/hasDopingParticipant"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
       {
-        "@id": "_:n68569b2ec2374c2295285d5ec5742c64b1"
+        "@id": "_:nfabce40527b44d57b98cf97943e8e549b6"
       }
     ]
   },
   {
-    "@id": "_:n68569b2ec2374c2295285d5ec5742c64b1",
+    "@id": "_:nfabce40527b44d57b98cf97943e8e549b6",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -871,29 +566,34 @@
     ]
   },
   {
-    "@id": "http://w3id.org/semiconto/InfraredRefractiveIndex",
+    "@id": "http://w3id.org/semiconto/Experiment",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://w3id.org/semiconto/OpticalProperty"
+        "@id": "_:nfabce40527b44d57b98cf97943e8e549b9"
       }
     ]
   },
   {
-    "@id": "http://w3id.org/semiconto/MeltingPoint",
+    "@id": "_:nfabce40527b44d57b98cf97943e8e549b9",
     "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
+      "http://www.w3.org/2002/07/owl#Restriction"
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2002/07/owl#onProperty": [
       {
-        "@id": "http://w3id.org/semiconto/ThermalProperty"
+        "@id": "http://www.w3.org/ns/prov#wasAssociatedWith"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://w3id.org/semiconto/ExperimentalEquipment"
       }
     ]
   },
   {
-    "@id": "http://w3id.org/semiconto/BreakdownField",
+    "@id": "http://w3id.org/semiconto/HoleIonizationRate",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -904,7 +604,54 @@
     ]
   },
   {
-    "@id": "http://w3id.org/semiconto/SpecificHeat",
+    "@id": "http://w3id.org/semiconto/MobilityElectrons",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/semiconto/ElectricalProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/semiconto/MolecularEntity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@value": "http://emmo.info/emmo#EMMO_21205421_5783_4d3e_81e5_10c5d894a88a"
+      },
+      {
+        "@value": "http://purl.obolibrary.org/obo/chebi#23367"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/semiconto/ChemicalEntity"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/modified",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/semiconto/IntrinsicSemiconductor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/semiconto/SemiconductorKind"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/semiconto/ThermalConductivity",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -915,27 +662,27 @@
     ]
   },
   {
-    "@id": "http://w3id.org/semiconto/P-TypeSemiconductor",
+    "@id": "http://w3id.org/semiconto/ExtrincSemiconductor",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://w3id.org/semiconto/ExtrincSemiconductor"
+        "@id": "http://w3id.org/semiconto/SemiconductorKind"
       },
       {
-        "@id": "_:n68569b2ec2374c2295285d5ec5742c64b13"
+        "@id": "_:nfabce40527b44d57b98cf97943e8e549b10"
       }
     ]
   },
   {
-    "@id": "_:n68569b2ec2374c2295285d5ec5742c64b13",
+    "@id": "_:nfabce40527b44d57b98cf97943e8e549b10",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
     "http://www.w3.org/2002/07/owl#onClass": [
       {
-        "@id": "_:n68569b2ec2374c2295285d5ec5742c64b14"
+        "@id": "http://w3id.org/semiconto/DopingRelation"
       }
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
@@ -951,13 +698,283 @@
     ]
   },
   {
-    "@id": "_:n68569b2ec2374c2295285d5ec5742c64b14",
+    "@id": "http://purl.org/dc/terms/creator",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/rights",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/semiconto/TemperatureCondition",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://qudt.org/schema/qudt/Quantity"
+      },
+      {
+        "@id": "http://w3id.org/semiconto/Condition"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/semiconto/Material",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Material"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@value": "http://emmo.info/emmo#EMMO_4207e895_8b83_4318_996a_72cfb32acd94"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/semiconto/Matter"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/semiconto/relatesToMaterial",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/semiconto/SemiconductorStructure"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/semiconto/SemiconductorMaterial"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@value": "https://w3id.org/mdo/core/relatesToMaterial"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/semiconto/hasSemiconductorType",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/semiconto/SemiconductorMaterial"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/semiconto/SemiconductorKind"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/semiconto/InfraredRefractiveIndex",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/semiconto/OpticalProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/created",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/semiconto/Condition",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/license",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#wasAssociatedWith",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/semiconto/AtmosphericPressureCondition",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://qudt.org/schema/qudt/Quantity"
+      },
+      {
+        "@id": "http://w3id.org/semiconto/Condition"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/semiconto/ChemicalSubstance",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@value": "http://emmo.info/emmo#EMMO_df96cbb6_b5ee_4222_8eab_b3675df24bea"
+      },
+      {
+        "@value": "http://purl.obolibrary.org/obo/chebi#59999"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/semiconto/ChemicalEntity"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/semiconto/ElectronDriftVelocity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/semiconto/ElectricalProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/semiconto/Property",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://qudt.org/schema/qudt/Quantity"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/semiconto/Matter",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#comment": [
+      {
+        "@value": "A matter is a physical substance."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Matter"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@value": "http://emmo.info/emmo#EMMO_5b2222df_4da6_442f_8244_96e9e45887d1"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/semiconto/Dopant",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/Quantity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/semiconto/hasCondition",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/semiconto/Experiment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/semiconto/Condition"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/semiconto/hasExperimentalOutput",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/semiconto/Experiment"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/semiconto/N-TypeSemiconductor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/semiconto/ExtrincSemiconductor"
+      },
+      {
+        "@id": "_:nfabce40527b44d57b98cf97943e8e549b11"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfabce40527b44d57b98cf97943e8e549b11",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
     "http://www.w3.org/2002/07/owl#onClass": [
       {
-        "@id": "http://w3id.org/semiconto/Acceptor"
+        "@id": "_:nfabce40527b44d57b98cf97943e8e549b12"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/semiconto/hasDopingRelation"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#qualifiedCardinality": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+        "@value": "1"
+      }
+    ]
+  },
+  {
+    "@id": "_:nfabce40527b44d57b98cf97943e8e549b12",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onClass": [
+      {
+        "@id": "http://w3id.org/semiconto/Donor"
       }
     ],
     "http://www.w3.org/2002/07/owl#onProperty": [
@@ -973,30 +990,13 @@
     ]
   },
   {
-    "@id": "http://w3id.org/semiconto/Donor",
+    "@id": "http://w3id.org/semiconto/ThermalExpansion",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://w3id.org/semiconto/Dopant"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/Dopant",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/DiffusionCofficientElectrons",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/semiconto/ElectricalProperty"
+        "@id": "http://w3id.org/semiconto/ThermalProperty"
       }
     ]
   }
