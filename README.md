@@ -2,15 +2,12 @@
 
 SemicONTO (***Semic***onductor ***ONTO***logy) is an ontology for the semiconductor domain. 
 
+### Use Case:
+SemicONTO aims to capture semantics that can represent: (1) composition information of semiconductors in terms of of basic chemical composition information as well as structural information (e.g., donors); (2) property information of semiconductors. 
 
-### What kinds of semiconductors are you working on? How do you classify different semiconductors?
+### Competency Questions:
 
-### What are the processes/workflows when you design a semiconductor?
-
-### What equipments or softwares do you use in your workflow?
-
-### When you design a semiconductor, what material properties do you focus on?
-
-### Do you need some data (e.g., published in other papers) before you design your semiconductors? If so, what is such data about? 
-
-### In your workflow of designing semiconductors, what can you reuse from previous designs? 
+#### What are the different kinds of semiconductors?
+#### What are the conditions for a semiconductor experiment?
+#### What are the donor materials in a semiconductor?
+#### What are the values of particular semiconductor properties?
