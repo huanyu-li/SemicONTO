@@ -6,96 +6,20 @@
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
    xmlns:vann="http://purl.org/vocab/vann/"
 >
-  <rdf:Description rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b28">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/SemicONTO/hasAcceptor"/>
-    <owl:allValuesFrom rdf:resource="http://w3id.org/SemicONTO/Material"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/SemicONTO/ExtrinsicSemiconductor">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/SemicONTO/Semiconductor"/>
-    <rdfs:subClassOf rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b26"/>
-    <rdfs:subClassOf rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b31"/>
-    <owl:disjointWith rdf:resource="http://w3id.org/SemicONTO/IntrinsicSemiconductor"/>
-    <rdfs:label>Extrinsic Semiconductor</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/ns/prov#endedAtTime">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/SemicONTO/isDescribedBy">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:range rdf:resource="http://w3id.org/SemicONTO/InformationObject"/>
-    <rdfs:label>is described by</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/SemicONTO/ExperimentalStep">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-    <rdfs:subClassOf rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b16"/>
-    <rdfs:subClassOf rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b21"/>
-    <rdfs:label>Experimental Step</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b15">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/SemicONTO/hasEquipment"/>
-    <owl:someValuesFrom rdf:resource="http://w3id.org/SemicONTO/Equipment"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/SemicONTO/InformationObject">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Information Object</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/SemicONTO/Acceptor">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/SemicONTO/Dopant"/>
-    <rdfs:label>Acceptor</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/SemicONTO/ChemicalEntity">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/SemicONTO/Matter"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b37">
-    <rdf:first rdf:resource="http://w3id.org/SemicONTO/ExtrinsicSemiconductor"/>
-    <rdf:rest rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b38"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/SemicONTO/hasAcceptor">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-    <rdfs:domain rdf:resource="http://w3id.org/SemicONTO/ExtrinsicSemiconductor"/>
-    <rdfs:range rdf:resource="http://w3id.org/SemicONTO/Material"/>
-    <rdfs:label>has acceptor</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b14">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/SemicONTO/experimentsOn"/>
-    <owl:someValuesFrom rdf:resource="http://w3id.org/SemicONTO/Material"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/ns/prov#Entity">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b9">
-    <owl:intersectionOf rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b12"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://w3id.org/SemicONTO/hasExperimentalStepDescription">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:domain rdf:resource="http://w3id.org/SemicONTO/StepInfoObj"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     <rdfs:label>has experimental step description</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/SemicONTO/hasDonor">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-    <rdfs:domain rdf:resource="http://w3id.org/SemicONTO/ExtrinsicSemiconductor"/>
-    <rdfs:range rdf:resource="http://w3id.org/SemicONTO/Material"/>
-    <rdfs:label>has donor</rdfs:label>
+  <rdf:Description rdf:about="http://w3id.org/SemicONTO/MolecularEntity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/SemicONTO/ChemicalEntity"/>
+    <rdfs:seeAlso>http://emmo.info/emmo#EMMO_21205421_5783_4d3e_81e5_10c5d894a88a</rdfs:seeAlso>
+    <rdfs:seeAlso>http://purl.obolibrary.org/obo/chebi#23367</rdfs:seeAlso>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b29">
-    <rdf:first rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b27"/>
-    <rdf:rest rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b30"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b3">
-    <rdf:first rdf:resource="http://w3id.org/SemicONTO/Donor"/>
+  <rdf:Description rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b30">
+    <rdf:first rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b28"/>
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://w3id.org/SemicONTO/SemiconductorExperiment">
@@ -103,50 +27,21 @@
     <rdfs:subClassOf rdf:resource="http://w3id.org/SemicONTO/Experiment"/>
     <rdfs:label>Smiconductor Experiment</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/SemicONTO/Donor">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/SemicONTO/Dopant"/>
-    <rdfs:label>Donor</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b11">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/SemicONTO/isDescribedBy"/>
-    <owl:allValuesFrom rdf:resource="http://w3id.org/SemicONTO/ExperimentInfoObj"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/SemicONTO/StepInfoObj">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/SemicONTO/InformationObject"/>
-    <rdfs:label>Experimental Step Information Object</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/SemicONTO/DopingRelation">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Doping Relation</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/SemicONTO/hasStructure">
+  <rdf:Description rdf:about="http://w3id.org/SemicONTO/hasEquipment">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://w3id.org/SemicONTO/Material"/>
-    <rdfs:range rdf:resource="https://w3id.org/mdo/core/Structure"/>
-    <rdfs:label>has structure</rdfs:label>
+    <rdfs:domain rdf:resource="http://w3id.org/SemicONTO/ExperimentalStep"/>
+    <rdfs:range rdf:resource="http://w3id.org/SemicONTO/Equipment"/>
+    <rdfs:label>has equipment</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b23">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/SemicONTO/isDescribedBy"/>
-    <owl:allValuesFrom rdf:resource="http://w3id.org/SemicONTO/StepInfoObj"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/SemicONTO/N-TypeSemiconductor">
+  <rdf:Description rdf:about="http://w3id.org/SemicONTO/Semiconductor">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/SemicONTO/ExtrinsicSemiconductor"/>
-    <rdfs:label>N-Type Semiconductor</rdfs:label>
+    <owl:equivalentClass rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b36"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/SemicONTO/Material"/>
+    <rdfs:label>Semiconductor</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/ns/prov#startedAtTime">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b27">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/SemicONTO/hasAcceptor"/>
-    <owl:someValuesFrom rdf:resource="http://w3id.org/SemicONTO/Material"/>
+  <rdf:Description rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b8">
+    <rdf:first rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b6"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://w3id.org/SemicONTO/">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
@@ -160,56 +55,164 @@
     <rdfs:seeAlso>https://github.com/huanyu-li/SemicONTO</rdfs:seeAlso>
     <owl:versionInfo>0.1</owl:versionInfo>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/SemicONTO/Experiment">
+  <rdf:Description rdf:about="http://w3id.org/SemicONTO/IntrinsicSemiconductor">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-    <rdfs:subClassOf rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b4"/>
-    <rdfs:subClassOf rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b9"/>
-    <rdfs:subClassOf rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b14"/>
-    <rdfs:subClassOf rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b15"/>
-    <rdfs:label>Experiment</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/SemicONTO/Semiconductor"/>
+    <rdfs:label>Intrinsic Semiconductor</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b24">
-    <rdf:first rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b22"/>
-    <rdf:rest rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b25"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/SemicONTO/Material">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/SemicONTO/Matter"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-    <rdfs:label>Material</rdfs:label>
-    <rdfs:seeAlso>http://emmo.info/emmo#EMMO_4207e895_8b83_4318_996a_72cfb32acd94</rdfs:seeAlso>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b12">
-    <rdf:first rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b10"/>
-    <rdf:rest rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b13"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/SemicONTO/hasNextStep">
+  <rdf:Description rdf:about="http://w3id.org/SemicONTO/hasDonor">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://w3id.org/SemicONTO/ExperimentalStep"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/SemicONTO/ExtrinsicSemiconductor"/>
+    <rdfs:range rdf:resource="http://w3id.org/SemicONTO/Material"/>
+    <rdfs:label>has donor</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/SemicONTO/hasExperimentalStep">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/SemicONTO/Experiment"/>
     <rdfs:range rdf:resource="http://w3id.org/SemicONTO/ExperimentalStep"/>
-    <rdfs:label>has next step</rdfs:label>
+    <rdfs:label>has experimental step</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b26">
-    <owl:intersectionOf rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b29"/>
+  <rdf:Description rdf:about="https://w3id.org/mdo/structure/DescriptiveFormula">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment>descriptive formula</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/SemicONTO/N-TypeSemiconductor">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/SemicONTO/ExtrinsicSemiconductor"/>
+    <rdfs:label>N-Type Semiconductor</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b5">
+  <rdf:Description rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b5">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="http://w3id.org/SemicONTO/hasExperimentalStep"/>
     <owl:someValuesFrom rdf:resource="http://w3id.org/SemicONTO/ExperimentalStep"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/ns/prov#Agent">
+  <rdf:Description rdf:about="http://w3id.org/SemicONTO/ExperimentInfoObj">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/SemicONTO/InformationObject"/>
+    <rdfs:label>Experiment Information Object</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/mdo/structure/Composition">
+  <rdf:Description rdf:about="http://w3id.org/SemicONTO/experimentsOn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#used"/>
+    <rdfs:label>experiments on</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/SemicONTO/ExperimentalStep">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Composition</rdfs:label>
-    <rdfs:seeAlso>https://w3id.org/mdo/structure/Composition</rdfs:seeAlso>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    <rdfs:subClassOf rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b16"/>
+    <rdfs:subClassOf rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b21"/>
+    <rdfs:label>Experimental Step</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b38">
-    <rdf:first rdf:resource="http://w3id.org/SemicONTO/IntrinsicSemiconductor"/>
+  <rdf:Description rdf:about="http://w3id.org/SemicONTO/ExtrinsicSemiconductor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/SemicONTO/Semiconductor"/>
+    <rdfs:subClassOf rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b26"/>
+    <rdfs:subClassOf rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b31"/>
+    <owl:disjointWith rdf:resource="http://w3id.org/SemicONTO/IntrinsicSemiconductor"/>
+    <rdfs:label>Extrinsic Semiconductor</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b11">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/SemicONTO/isDescribedBy"/>
+    <owl:allValuesFrom rdf:resource="http://w3id.org/SemicONTO/ExperimentInfoObj"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b24">
+    <rdf:first rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b22"/>
+    <rdf:rest rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b25"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/SemicONTO/hasExperimentName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/SemicONTO/ExperimentInfoObj"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>has experiment name</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b25">
+    <rdf:first rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b23"/>
     <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b22">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/SemicONTO/isDescribedBy"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/SemicONTO/StepInfoObj"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/prov#used">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/SemicONTO/DopingRelation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Doping Relation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b10">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/SemicONTO/isDescribedBy"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/SemicONTO/ExperimentInfoObj"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b33">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/SemicONTO/hasDonor"/>
+    <owl:allValuesFrom rdf:resource="http://w3id.org/SemicONTO/Material"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b20">
+    <rdf:first rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b18"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b28">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/SemicONTO/hasAcceptor"/>
+    <owl:allValuesFrom rdf:resource="http://w3id.org/SemicONTO/Material"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/SemicONTO/Experiment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    <rdfs:subClassOf rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b4"/>
+    <rdfs:subClassOf rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b9"/>
+    <rdfs:subClassOf rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b14"/>
+    <rdfs:subClassOf rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b15"/>
+    <rdfs:label>Experiment</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b6">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/SemicONTO/hasExperimentalStep"/>
+    <owl:allValuesFrom rdf:resource="http://w3id.org/SemicONTO/ExperimentalStep"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/isVersionOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b13">
+    <rdf:first rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b11"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b35">
+    <rdf:first rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b33"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b27">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/SemicONTO/hasAcceptor"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/SemicONTO/Material"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/SemicONTO/StepInfoObj">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/SemicONTO/InformationObject"/>
+    <rdfs:label>Experimental Step Information Object</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/SemicONTO/isDescribedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://w3id.org/SemicONTO/InformationObject"/>
+    <rdfs:label>is described by</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/mdo/structure/hasComposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>has composition</rdfs:label>
+    <rdfs:seeAlso>https://w3id.org/mdo/structure/hasComposition</rdfs:seeAlso>
   </rdf:Description>
   <rdf:Description rdf:about="http://w3id.org/SemicONTO/hasSubStep">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -218,166 +221,71 @@
     <rdfs:range rdf:resource="http://w3id.org/SemicONTO/ExperimentalStep"/>
     <rdfs:label>has sub-step</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/created">
+  <rdf:Description rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b29">
+    <rdf:first rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b27"/>
+    <rdf:rest rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b30"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b18">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/SemicONTO/hasEquipment"/>
+    <owl:allValuesFrom rdf:resource="http://w3id.org/SemicONTO/Equipment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/SemicONTO/InformationObject">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Information Object</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/SemicONTO/P-TypeSemiconductor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/SemicONTO/ExtrinsicSemiconductor"/>
+    <rdfs:label>P-Type Semiconductor</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/SemicONTO/hasAcceptor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/SemicONTO/ExtrinsicSemiconductor"/>
+    <rdfs:range rdf:resource="http://w3id.org/SemicONTO/Material"/>
+    <rdfs:label>has acceptor</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/title">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/SemicONTO/hasExperimentAim">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="http://w3id.org/SemicONTO/ExperimentInfoObj"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:label>has experiment aim</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b8">
-    <rdf:first rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b6"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b10">
+  <rdf:Description rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b15">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/SemicONTO/isDescribedBy"/>
-    <owl:someValuesFrom rdf:resource="http://w3id.org/SemicONTO/ExperimentInfoObj"/>
+    <owl:onProperty rdf:resource="http://w3id.org/SemicONTO/hasEquipment"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/SemicONTO/Equipment"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/SemicONTO/Equipment">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
-    <rdfs:label>Equipment</rdfs:label>
+  <rdf:Description rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b14">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/SemicONTO/experimentsOn"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/SemicONTO/Material"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b36">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b37"/>
+  <rdf:Description rdf:about="http://www.w3.org/ns/prov#endedAtTime">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b34">
-    <rdf:first rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b32"/>
-    <rdf:rest rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b35"/>
+  <rdf:Description rdf:about="http://www.w3.org/ns/prov#startedAtTime">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/SemicONTO/ChemicalSubstance">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/SemicONTO/ChemicalEntity"/>
-    <rdfs:seeAlso>http://emmo.info/emmo#EMMO_df96cbb6_b5ee_4222_8eab_b3675df24bea</rdfs:seeAlso>
-    <rdfs:seeAlso>http://purl.obolibrary.org/obo/chebi#59999</rdfs:seeAlso>
+  <rdf:Description rdf:about="http://w3id.org/SemicONTO/hasNextStep">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/SemicONTO/ExperimentalStep"/>
+    <rdfs:range rdf:resource="http://w3id.org/SemicONTO/ExperimentalStep"/>
+    <rdfs:label>has next step</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://w3id.org/SemicONTO/hasExperimentalStepID">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:domain rdf:resource="http://w3id.org/SemicONTO/StepInfoObj"/>
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b20">
-    <rdf:first rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b18"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b30">
-    <rdf:first rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b28"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/SemicONTO/IntrinsicSemiconductor">
+  <rdf:Description rdf:about="http://w3id.org/SemicONTO/Material">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/SemicONTO/Semiconductor"/>
-    <rdfs:label>Intrinsic Semiconductor</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b7">
-    <rdf:first rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b5"/>
-    <rdf:rest rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b8"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/ns/prov#used">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/ns/prov#Activity">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/SemicONTO/hasEquipment">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://w3id.org/SemicONTO/ExperimentalStep"/>
-    <rdfs:range rdf:resource="http://w3id.org/SemicONTO/Equipment"/>
-    <rdfs:label>has equipment</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b6">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/SemicONTO/hasExperimentalStep"/>
-    <owl:allValuesFrom rdf:resource="http://w3id.org/SemicONTO/ExperimentalStep"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/SemicONTO/hasExperimentName">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="http://w3id.org/SemicONTO/ExperimentInfoObj"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:label>has experiment name</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b25">
-    <rdf:first rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b23"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/title">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b1">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b2"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b13">
-    <rdf:first rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b11"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/rights">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b32">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/SemicONTO/hasDonor"/>
-    <owl:someValuesFrom rdf:resource="http://w3id.org/SemicONTO/Material"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/SemicONTO/MolecularEntity">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/SemicONTO/ChemicalEntity"/>
-    <rdfs:seeAlso>http://emmo.info/emmo#EMMO_21205421_5783_4d3e_81e5_10c5d894a88a</rdfs:seeAlso>
-    <rdfs:seeAlso>http://purl.obolibrary.org/obo/chebi#23367</rdfs:seeAlso>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/SemicONTO/Dopant">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:equivalentClass rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b1"/>
-    <rdfs:label>Dopant</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/SemicONTO/hasExperimentalStep">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://w3id.org/SemicONTO/Experiment"/>
-    <rdfs:range rdf:resource="http://w3id.org/SemicONTO/ExperimentalStep"/>
-    <rdfs:label>has experimental step</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/SemicONTO/Semiconductor">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:equivalentClass rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b36"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/SemicONTO/Material"/>
-    <rdfs:label>Semiconductor</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/mdo/structure/hasComposition">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label>has composition</rdfs:label>
-    <rdfs:seeAlso>https://w3id.org/mdo/structure/hasComposition</rdfs:seeAlso>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/contributor">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b19">
-    <rdf:first rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b17"/>
-    <rdf:rest rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b20"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b16">
-    <owl:intersectionOf rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b19"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/SemicONTO/experimentsOn">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#used"/>
-    <rdfs:label>experiments on</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/SemicONTO/hasExperimentalStepAim">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="http://w3id.org/SemicONTO/StepInfoObj"/>
-    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <rdfs:label>has experimental step aim</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/SemicONTO/Matter"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <rdfs:label>Material</rdfs:label>
+    <rdfs:seeAlso>http://emmo.info/emmo#EMMO_4207e895_8b83_4318_996a_72cfb32acd94</rdfs:seeAlso>
   </rdf:Description>
   <rdf:Description rdf:about="http://w3id.org/SemicONTO/Matter">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -385,86 +293,178 @@
     <rdfs:label>Matter</rdfs:label>
     <rdfs:seeAlso>http://emmo.info/emmo#EMMO_5b2222df_4da6_442f_8244_96e9e45887d1</rdfs:seeAlso>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/description">
+  <rdf:Description rdf:about="http://w3id.org/SemicONTO/hasStructure">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/SemicONTO/Material"/>
+    <rdfs:range rdf:resource="https://w3id.org/mdo/core/Structure"/>
+    <rdfs:label>has structure</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/SemicONTO/ChemicalSubstance">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/SemicONTO/ChemicalEntity"/>
+    <rdfs:seeAlso>http://emmo.info/emmo#EMMO_df96cbb6_b5ee_4222_8eab_b3675df24bea</rdfs:seeAlso>
+    <rdfs:seeAlso>http://purl.obolibrary.org/obo/chebi#59999</rdfs:seeAlso>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/creator">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/mdo/structure/DescriptiveFormula">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:comment>descriptive formula</rdfs:comment>
+  <rdf:Description rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b36">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b37"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b4">
-    <owl:intersectionOf rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b7"/>
+  <rdf:Description rdf:about="http://w3id.org/SemicONTO/ChemicalEntity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/SemicONTO/Matter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/SemicONTO/Donor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/SemicONTO/Dopant"/>
+    <rdfs:label>Donor</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/SemicONTO/Dopant">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:equivalentClass rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b1"/>
+    <rdfs:label>Dopant</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/prov#wasAssociatedWith">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b7">
+    <rdf:first rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b5"/>
+    <rdf:rest rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b16">
+    <owl:intersectionOf rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b19"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b21">
-    <owl:intersectionOf rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b24"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/contributor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/SemicONTO/ExperimentInfoObj">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/SemicONTO/InformationObject"/>
-    <rdfs:label>Experiment Information Object</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b33">
+  <rdf:Description rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b17">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/SemicONTO/hasDonor"/>
-    <owl:allValuesFrom rdf:resource="http://w3id.org/SemicONTO/Material"/>
+    <owl:onProperty rdf:resource="http://w3id.org/SemicONTO/hasEquipment"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/SemicONTO/Equipment"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/isVersionOf">
+  <rdf:Description rdf:about="https://w3id.org/mdo/structure/Composition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Composition</rdfs:label>
+    <rdfs:seeAlso>https://w3id.org/mdo/structure/Composition</rdfs:seeAlso>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b38">
+    <rdf:first rdf:resource="http://w3id.org/SemicONTO/IntrinsicSemiconductor"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b9">
+    <owl:intersectionOf rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b12"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/rights">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b4">
+    <owl:intersectionOf rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b7"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/SemicONTO/hasExperimentAim">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/SemicONTO/ExperimentInfoObj"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>has experiment aim</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/SemicONTO/Acceptor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://w3id.org/SemicONTO/Dopant"/>
+    <rdfs:label>Acceptor</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/SemicONTO/hasExperimentalStepAim">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://w3id.org/SemicONTO/StepInfoObj"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>has experimental step aim</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b31">
+    <owl:intersectionOf rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b34"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b12">
+    <rdf:first rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b10"/>
+    <rdf:rest rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b13"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://w3id.org/SemicONTO/experimentsFor">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/prov#used"/>
     <rdfs:label>experiments for</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b2">
-    <rdf:first rdf:resource="http://w3id.org/SemicONTO/Acceptor"/>
-    <rdf:rest rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b3"/>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/created">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b22">
+  <rdf:Description rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b34">
+    <rdf:first rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b32"/>
+    <rdf:rest rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b35"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b2">
+    <rdf:first rdf:resource="http://w3id.org/SemicONTO/Acceptor"/>
+    <rdf:rest rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b26">
+    <owl:intersectionOf rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b29"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://w3id.org/SemicONTO/Equipment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+    <rdfs:label>Equipment</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b21">
+    <owl:intersectionOf rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b24"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/description">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b23">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:onProperty rdf:resource="http://w3id.org/SemicONTO/isDescribedBy"/>
-    <owl:someValuesFrom rdf:resource="http://w3id.org/SemicONTO/StepInfoObj"/>
+    <owl:allValuesFrom rdf:resource="http://w3id.org/SemicONTO/StepInfoObj"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/modified">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://w3id.org/SemicONTO/P-TypeSemiconductor">
+  <rdf:Description rdf:about="http://www.w3.org/ns/prov#Agent">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://w3id.org/SemicONTO/ExtrinsicSemiconductor"/>
-    <rdfs:label>P-Type Semiconductor</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b35">
-    <rdf:first rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b33"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b18">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/SemicONTO/hasEquipment"/>
-    <owl:allValuesFrom rdf:resource="http://w3id.org/SemicONTO/Equipment"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b17">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:onProperty rdf:resource="http://w3id.org/SemicONTO/hasEquipment"/>
-    <owl:someValuesFrom rdf:resource="http://w3id.org/SemicONTO/Equipment"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/license">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/mdo/core/Structure">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:label>Structure</rdfs:label>
     <rdfs:seeAlso>https://w3id.org/mdo/core/Structure</rdfs:seeAlso>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b31">
-    <owl:intersectionOf rdf:nodeID="n9da0a8d3fdde44efbe41385b7c217682b34"/>
+  <rdf:Description rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b19">
+    <rdf:first rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b17"/>
+    <rdf:rest rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b20"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b32">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://w3id.org/SemicONTO/hasDonor"/>
+    <owl:someValuesFrom rdf:resource="http://w3id.org/SemicONTO/Material"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b3">
+    <rdf:first rdf:resource="http://w3id.org/SemicONTO/Donor"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b37">
+    <rdf:first rdf:resource="http://w3id.org/SemicONTO/ExtrinsicSemiconductor"/>
+    <rdf:rest rdf:nodeID="n525647c52ed3468bab27ffa228cf3984b38"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/modified">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/prov#Entity">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.w3.org/ns/prov#wasAssociatedWith">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+  <rdf:Description rdf:about="http://purl.org/dc/terms/license">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3.org/ns/prov#Activity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
 </rdf:RDF>
