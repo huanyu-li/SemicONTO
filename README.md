@@ -3,7 +3,7 @@
 SemicONTO (***Semic***onductor ***ONTO***logy) is an ontology for the semiconductor domain. 
 
 
-An live SPARQL server is accessed from [HERE](https://sparqlserver-dece566f4c86.herokuapp.com/dataset.html?tab=query&ds=/seminconto)!
+An live SPARQL server is accessed from [HERE](http://huanyu-li.github.io/SemicONTO/demo/)!
 
 ## Developer guidelines
 
