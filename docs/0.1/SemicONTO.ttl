@@ -1,4 +1,4 @@
-@prefix : <http://w3id.org/semiconto/> .
+@prefix : <http://w3id.org/SemicONTO/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
@@ -29,7 +29,7 @@ vann:preferredNamespacePrefix a owl:AnnotationProperty .
 
 vann:preferredNamespaceUri a owl:AnnotationProperty .
 
-<http://w3id.org/SemicONTO/> a owl:Ontology ;
+: a owl:Ontology ;
     dcterms:created "2023-03-21" ;
     dcterms:creator "Huanyu Li" ;
     dcterms:license "https://github.com/huanyu-li/SemicONTO/blob/main/LICENSE" ;

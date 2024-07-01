@@ -1,28 +1,144 @@
 [
   {
-    "@id": "http://w3id.org/semiconto/InformationObject",
+    "@id": "http://w3id.org/SemicONTO/ExperimentInfoObj",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "Information Object"
+        "@value": "Experiment Information Object"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/SemicONTO/InformationObject"
       }
     ]
   },
   {
-    "@id": "https://w3id.org/mdo/structure/hasComposition",
+    "@id": "http://w3id.org/SemicONTO/ExtrinsicSemiconductor",
     "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
+      "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "has composition"
+        "@value": "Extrinsic Semiconductor"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@value": "https://w3id.org/mdo/structure/hasComposition"
+        "@id": "http://w3id.org/SemicONTO/Semiconductor"
+      },
+      {
+        "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b26"
+      },
+      {
+        "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b31"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#disjointWith": [
+      {
+        "@id": "http://w3id.org/SemicONTO/IntrinsicSemiconductor"
+      }
+    ]
+  },
+  {
+    "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b26",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b27"
+          },
+          {
+            "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b28"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b27",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/SemicONTO/hasAcceptor"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://w3id.org/SemicONTO/Material"
+      }
+    ]
+  },
+  {
+    "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b28",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://w3id.org/SemicONTO/Material"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/SemicONTO/hasAcceptor"
+      }
+    ]
+  },
+  {
+    "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b31",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b32"
+          },
+          {
+            "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b33"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b32",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/SemicONTO/hasDonor"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://w3id.org/SemicONTO/Material"
+      }
+    ]
+  },
+  {
+    "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b33",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://w3id.org/SemicONTO/Material"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/SemicONTO/hasDonor"
       }
     ]
   },
@@ -78,167 +194,13 @@
     ]
   },
   {
-    "@id": "http://w3id.org/semiconto/hasEquipment",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "http://w3id.org/semiconto/ExperimentalStep"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "has equipment"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://w3id.org/semiconto/Equipment"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/Semiconductor",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Semiconductor"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/semiconto/Material"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#equivalentClass": [
-      {
-        "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b36"
-      }
-    ]
-  },
-  {
-    "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b36",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://w3id.org/semiconto/ExtrinsicSemiconductor"
-          },
-          {
-            "@id": "http://w3id.org/semiconto/IntrinsicSemiconductor"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/Donor",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Donor"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/semiconto/Dopant"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/N-TypeSemiconductor",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "N-Type Semiconductor"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/semiconto/ExtrinsicSemiconductor"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.w3.org/ns/prov#Entity",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/experimentsFor",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "experiments for"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://www.w3.org/ns/prov#used"
-      }
-    ]
-  },
-  {
     "@id": "http://purl.org/dc/terms/isVersionOf",
     "@type": [
       "http://www.w3.org/2002/07/owl#AnnotationProperty"
     ]
   },
   {
-    "@id": "http://w3id.org/semiconto/MolecularEntity",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@value": "http://emmo.info/emmo#EMMO_21205421_5783_4d3e_81e5_10c5d894a88a"
-      },
-      {
-        "@value": "http://purl.obolibrary.org/obo/chebi#23367"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/semiconto/ChemicalEntity"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/hasNextStep",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "http://w3id.org/semiconto/ExperimentalStep"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "has next step"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://w3id.org/semiconto/ExperimentalStep"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/Matter",
+    "@id": "http://w3id.org/SemicONTO/Matter",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -259,50 +221,7 @@
     ]
   },
   {
-    "@id": "http://w3id.org/semiconto/hasExperimentalStepAim",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "http://w3id.org/semiconto/StepInfoObj"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "has experimental step aim"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#string"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/hasExperimentalStepID",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "http://w3id.org/semiconto/StepInfoObj"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#string"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/terms/description",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/IntrinsicSemiconductor",
+    "@id": "http://w3id.org/SemicONTO/IntrinsicSemiconductor",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -313,508 +232,92 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://w3id.org/semiconto/Semiconductor"
+        "@id": "http://w3id.org/SemicONTO/Semiconductor"
       }
     ]
   },
   {
-    "@id": "https://w3id.org/mdo/core/Structure",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Structure"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@value": "https://w3id.org/mdo/core/Structure"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/ExtrinsicSemiconductor",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Extrinsic Semiconductor"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/semiconto/Semiconductor"
-      },
-      {
-        "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b26"
-      },
-      {
-        "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b31"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#disjointWith": [
-      {
-        "@id": "http://w3id.org/semiconto/IntrinsicSemiconductor"
-      }
-    ]
-  },
-  {
-    "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b26",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#intersectionOf": [
-      {
-        "@list": [
-          {
-            "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b27"
-          },
-          {
-            "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b28"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b27",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/semiconto/hasAcceptor"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://w3id.org/semiconto/Material"
-      }
-    ]
-  },
-  {
-    "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b28",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://w3id.org/semiconto/Material"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/semiconto/hasAcceptor"
-      }
-    ]
-  },
-  {
-    "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b31",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#intersectionOf": [
-      {
-        "@list": [
-          {
-            "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b32"
-          },
-          {
-            "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b33"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b32",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/semiconto/hasDonor"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://w3id.org/semiconto/Material"
-      }
-    ]
-  },
-  {
-    "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b33",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://w3id.org/semiconto/Material"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/semiconto/hasDonor"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/terms/contributor",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/Equipment",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Equipment"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/ns/prov#Agent"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/Experiment",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Experiment"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/ns/prov#Activity"
-      },
-      {
-        "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b4"
-      },
-      {
-        "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b9"
-      },
-      {
-        "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b14"
-      },
-      {
-        "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b15"
-      }
-    ]
-  },
-  {
-    "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b4",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#intersectionOf": [
-      {
-        "@list": [
-          {
-            "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b5"
-          },
-          {
-            "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b6"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b5",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/semiconto/hasExperimentalStep"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://w3id.org/semiconto/ExperimentalStep"
-      }
-    ]
-  },
-  {
-    "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b6",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://w3id.org/semiconto/ExperimentalStep"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/semiconto/hasExperimentalStep"
-      }
-    ]
-  },
-  {
-    "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b9",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#intersectionOf": [
-      {
-        "@list": [
-          {
-            "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b10"
-          },
-          {
-            "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b11"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b10",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/semiconto/isDescribedBy"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://w3id.org/semiconto/ExperimentInfoObj"
-      }
-    ]
-  },
-  {
-    "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b11",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://w3id.org/semiconto/ExperimentInfoObj"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/semiconto/isDescribedBy"
-      }
-    ]
-  },
-  {
-    "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b14",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/semiconto/experimentsOn"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://w3id.org/semiconto/Material"
-      }
-    ]
-  },
-  {
-    "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b15",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/semiconto/hasEquipment"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://w3id.org/semiconto/Equipment"
-      }
-    ]
-  },
-  {
-    "@id": "https://w3id.org/mdo/structure/Composition",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Composition"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@value": "https://w3id.org/mdo/structure/Composition"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/hasDonor",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "http://w3id.org/semiconto/ExtrinsicSemiconductor"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "has donor"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://w3id.org/semiconto/Material"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
-      {
-        "@id": "http://www.w3.org/2002/07/owl#topObjectProperty"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/SemiconductorExperiment",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Smiconductor Experiment"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/semiconto/Experiment"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/ChemicalSubstance",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@value": "http://emmo.info/emmo#EMMO_df96cbb6_b5ee_4222_8eab_b3675df24bea"
-      },
-      {
-        "@value": "http://purl.obolibrary.org/obo/chebi#59999"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/semiconto/ChemicalEntity"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.w3.org/ns/prov#startedAtTime",
+    "@id": "http://w3id.org/SemicONTO/hasExperimentalStepDescription",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://www.w3.org/ns/prov#Activity"
+        "@id": "http://w3id.org/SemicONTO/StepInfoObj"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "has experimental step description"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
       }
     ]
   },
   {
-    "@id": "http://w3id.org/semiconto/StepInfoObj",
+    "@id": "http://w3id.org/SemicONTO/Material",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "Experimental Step Information Object"
+        "@value": "Material"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@value": "http://emmo.info/emmo#EMMO_4207e895_8b83_4318_996a_72cfb32acd94"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://w3id.org/semiconto/InformationObject"
+        "@id": "http://w3id.org/SemicONTO/Matter"
+      },
+      {
+        "@id": "http://www.w3.org/ns/prov#Entity"
       }
     ]
   },
   {
-    "@id": "http://w3id.org/semiconto/Dopant",
+    "@id": "http://w3id.org/SemicONTO/MolecularEntity",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
       {
-        "@value": "Dopant"
+        "@value": "http://emmo.info/emmo#EMMO_21205421_5783_4d3e_81e5_10c5d894a88a"
+      },
+      {
+        "@value": "http://purl.obolibrary.org/obo/chebi#23367"
       }
     ],
-    "http://www.w3.org/2002/07/owl#equivalentClass": [
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b1"
+        "@id": "http://w3id.org/SemicONTO/ChemicalEntity"
       }
     ]
   },
   {
-    "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b1",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#unionOf": [
-      {
-        "@list": [
-          {
-            "@id": "http://w3id.org/semiconto/Acceptor"
-          },
-          {
-            "@id": "http://w3id.org/semiconto/Donor"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/isDescribedBy",
+    "@id": "http://w3id.org/SemicONTO/hasNextStep",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/SemicONTO/ExperimentalStep"
+      }
+    ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "is described by"
+        "@value": "has next step"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://w3id.org/semiconto/InformationObject"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/terms/modified",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/ChemicalEntity",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/semiconto/Matter"
+        "@id": "http://w3id.org/SemicONTO/ExperimentalStep"
       }
     ]
   },
@@ -835,24 +338,69 @@
     ]
   },
   {
-    "@id": "http://w3id.org/semiconto/hasExperimentalStep",
+    "@id": "http://purl.org/dc/terms/rights",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/SemicONTO/hasStructure",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
     "http://www.w3.org/2000/01/rdf-schema#domain": [
       {
-        "@id": "http://w3id.org/semiconto/Experiment"
+        "@id": "http://w3id.org/SemicONTO/Material"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "has experimental step"
+        "@value": "has structure"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#range": [
       {
-        "@id": "http://w3id.org/semiconto/ExperimentalStep"
+        "@id": "https://w3id.org/mdo/core/Structure"
       }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#Entity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/SemicONTO/hasExperimentName",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/SemicONTO/ExperimentInfoObj"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "has experiment name"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/vocab/vann/preferredNamespacePrefix",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/creator",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
     ]
   },
   {
@@ -862,7 +410,535 @@
     ]
   },
   {
-    "@id": "http://w3id.org/semiconto/experimentsOn",
+    "@id": "http://www.w3.org/ns/prov#startedAtTime",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Activity"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+      }
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#Agent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/SemicONTO/experimentsFor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "experiments for"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#used"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/SemicONTO/hasDonor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/SemicONTO/ExtrinsicSemiconductor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "has donor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/SemicONTO/Material"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topObjectProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/SemicONTO/hasAcceptor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/SemicONTO/ExtrinsicSemiconductor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "has acceptor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/SemicONTO/Material"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+      {
+        "@id": "http://www.w3.org/2002/07/owl#topObjectProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/SemicONTO/hasExperimentalStepAim",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/SemicONTO/StepInfoObj"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "has experimental step aim"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/description",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/SemicONTO/ExperimentalStep",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Experimental Step"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Activity"
+      },
+      {
+        "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b16"
+      },
+      {
+        "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b21"
+      }
+    ]
+  },
+  {
+    "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b16",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b17"
+          },
+          {
+            "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b18"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b17",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/SemicONTO/hasEquipment"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://w3id.org/SemicONTO/Equipment"
+      }
+    ]
+  },
+  {
+    "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b18",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://w3id.org/SemicONTO/Equipment"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/SemicONTO/hasEquipment"
+      }
+    ]
+  },
+  {
+    "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b21",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b22"
+          },
+          {
+            "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b23"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b22",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/SemicONTO/isDescribedBy"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://w3id.org/SemicONTO/StepInfoObj"
+      }
+    ]
+  },
+  {
+    "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b23",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://w3id.org/SemicONTO/StepInfoObj"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/SemicONTO/isDescribedBy"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/SemicONTO/hasExperimentAim",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/SemicONTO/ExperimentInfoObj"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "has experiment aim"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/SemicONTO/hasExperimentalStep",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/SemicONTO/Experiment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "has experimental step"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/SemicONTO/ExperimentalStep"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/SemicONTO/InformationObject",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Information Object"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/created",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#Activity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/SemicONTO/SemiconductorExperiment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Smiconductor Experiment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/SemicONTO/Experiment"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/SemicONTO/N-TypeSemiconductor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "N-Type Semiconductor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/SemicONTO/ExtrinsicSemiconductor"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/license",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/SemicONTO/isDescribedBy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "is described by"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/SemicONTO/InformationObject"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/SemicONTO/hasExperimentalStepID",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/SemicONTO/StepInfoObj"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://www.w3.org/2001/XMLSchema#string"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/mdo/structure/hasComposition",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "has composition"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@value": "https://w3id.org/mdo/structure/hasComposition"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/SemicONTO/hasEquipment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/SemicONTO/ExperimentalStep"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "has equipment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/SemicONTO/Equipment"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/SemicONTO/ChemicalEntity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/SemicONTO/Matter"
+      }
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/contributor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://www.w3.org/ns/prov#used",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+  },
+  {
+    "@id": "http://purl.org/dc/terms/modified",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/SemicONTO/Semiconductor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Semiconductor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/SemicONTO/Material"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
+      {
+        "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b36"
+      }
+    ]
+  },
+  {
+    "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b36",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/SemicONTO/ExtrinsicSemiconductor"
+          },
+          {
+            "@id": "http://w3id.org/SemicONTO/IntrinsicSemiconductor"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/SemicONTO/Donor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Donor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/SemicONTO/Dopant"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/SemicONTO/hasSubStep",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "http://www.w3.org/2002/07/owl#TransitiveProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/SemicONTO/ExperimentalStep"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "has sub-step"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/SemicONTO/ExperimentalStep"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/SemicONTO/DopingRelation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Doping Relation"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/SemicONTO/experimentsOn",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
     ],
@@ -878,133 +954,218 @@
     ]
   },
   {
-    "@id": "http://w3id.org/semiconto/hasSubStep",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "http://www.w3.org/2002/07/owl#TransitiveProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "http://w3id.org/semiconto/ExperimentalStep"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "has sub-step"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://w3id.org/semiconto/ExperimentalStep"
-      }
-    ]
-  },
-  {
-    "@id": "http://www.w3.org/ns/prov#Agent",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ]
-  },
-  {
-    "@id": "http://www.w3.org/ns/prov#used",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ]
-  },
-  {
-    "@id": "http://purl.org/vocab/vann/preferredNamespacePrefix",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/hasStructure",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "http://w3id.org/semiconto/Material"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "has structure"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "https://w3id.org/mdo/core/Structure"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/ExperimentInfoObj",
+    "@id": "http://w3id.org/SemicONTO/Experiment",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "Experiment Information Object"
+        "@value": "Experiment"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://w3id.org/semiconto/InformationObject"
+        "@id": "http://www.w3.org/ns/prov#Activity"
+      },
+      {
+        "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b4"
+      },
+      {
+        "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b9"
+      },
+      {
+        "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b14"
+      },
+      {
+        "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b15"
       }
     ]
   },
   {
-    "@id": "http://w3id.org/semiconto/P-TypeSemiconductor",
+    "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b4",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b5"
+          },
+          {
+            "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b5",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/SemicONTO/hasExperimentalStep"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://w3id.org/SemicONTO/ExperimentalStep"
+      }
+    ]
+  },
+  {
+    "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b6",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://w3id.org/SemicONTO/ExperimentalStep"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/SemicONTO/hasExperimentalStep"
+      }
+    ]
+  },
+  {
+    "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b9",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#intersectionOf": [
+      {
+        "@list": [
+          {
+            "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b10"
+          },
+          {
+            "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b10",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/SemicONTO/isDescribedBy"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://w3id.org/SemicONTO/ExperimentInfoObj"
+      }
+    ]
+  },
+  {
+    "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b11",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#allValuesFrom": [
+      {
+        "@id": "http://w3id.org/SemicONTO/ExperimentInfoObj"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/SemicONTO/isDescribedBy"
+      }
+    ]
+  },
+  {
+    "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b14",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/SemicONTO/experimentsOn"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://w3id.org/SemicONTO/Material"
+      }
+    ]
+  },
+  {
+    "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b15",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/SemicONTO/hasEquipment"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://w3id.org/SemicONTO/Equipment"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/SemicONTO/ChemicalSubstance",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+      {
+        "@value": "http://emmo.info/emmo#EMMO_df96cbb6_b5ee_4222_8eab_b3675df24bea"
+      },
+      {
+        "@value": "http://purl.obolibrary.org/obo/chebi#59999"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/SemicONTO/ChemicalEntity"
+      }
+    ]
+  },
+  {
+    "@id": "https://w3id.org/mdo/core/Structure",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "P-Type Semiconductor"
+        "@value": "Structure"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
       {
-        "@id": "http://w3id.org/semiconto/ExtrinsicSemiconductor"
+        "@value": "https://w3id.org/mdo/core/Structure"
       }
     ]
   },
   {
-    "@id": "http://purl.org/dc/terms/rights",
+    "@id": "https://w3id.org/mdo/structure/Composition",
     "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/hasExperimentalStepDescription",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "http://w3id.org/semiconto/StepInfoObj"
-      }
+      "http://www.w3.org/2002/07/owl#Class"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "has experimental step description"
+        "@value": "Composition"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
+    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
       {
-        "@id": "http://www.w3.org/2001/XMLSchema#string"
+        "@value": "https://w3id.org/mdo/structure/Composition"
       }
     ]
   },
   {
-    "@id": "http://purl.org/dc/terms/creator",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/Acceptor",
+    "@id": "http://w3id.org/SemicONTO/Acceptor",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -1015,39 +1176,73 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://w3id.org/semiconto/Dopant"
+        "@id": "http://w3id.org/SemicONTO/Dopant"
       }
     ]
   },
   {
-    "@id": "http://www.w3.org/ns/prov#Activity",
+    "@id": "http://w3id.org/SemicONTO/Dopant",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/hasAcceptor",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#ObjectProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "http://w3id.org/semiconto/ExtrinsicSemiconductor"
-      }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "has acceptor"
+        "@value": "Dopant"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
+    "http://www.w3.org/2002/07/owl#equivalentClass": [
       {
-        "@id": "http://w3id.org/semiconto/Material"
+        "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b1"
+      }
+    ]
+  },
+  {
+    "@id": "_:nd54bf0965f6f4c61a15aa6423c98f435b1",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2002/07/owl#unionOf": [
+      {
+        "@list": [
+          {
+            "@id": "http://w3id.org/SemicONTO/Acceptor"
+          },
+          {
+            "@id": "http://w3id.org/SemicONTO/Donor"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/SemicONTO/StepInfoObj",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Experimental Step Information Object"
       }
     ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf": [
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
-        "@id": "http://www.w3.org/2002/07/owl#topObjectProperty"
+        "@id": "http://w3id.org/SemicONTO/InformationObject"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/SemicONTO/Equipment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Equipment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://www.w3.org/ns/prov#Agent"
       }
     ]
   },
@@ -1063,217 +1258,6 @@
     ]
   },
   {
-    "@id": "http://w3id.org/semiconto/DopingRelation",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Doping Relation"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/ExperimentalStep",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Experimental Step"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://www.w3.org/ns/prov#Activity"
-      },
-      {
-        "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b16"
-      },
-      {
-        "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b21"
-      }
-    ]
-  },
-  {
-    "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b16",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#intersectionOf": [
-      {
-        "@list": [
-          {
-            "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b17"
-          },
-          {
-            "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b18"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b17",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/semiconto/hasEquipment"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://w3id.org/semiconto/Equipment"
-      }
-    ]
-  },
-  {
-    "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b18",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://w3id.org/semiconto/Equipment"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/semiconto/hasEquipment"
-      }
-    ]
-  },
-  {
-    "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b21",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2002/07/owl#intersectionOf": [
-      {
-        "@list": [
-          {
-            "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b22"
-          },
-          {
-            "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b23"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b22",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/semiconto/isDescribedBy"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#someValuesFrom": [
-      {
-        "@id": "http://w3id.org/semiconto/StepInfoObj"
-      }
-    ]
-  },
-  {
-    "@id": "_:n45b093db70d84cf9980b7478cc0cc5b7b23",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Restriction"
-    ],
-    "http://www.w3.org/2002/07/owl#allValuesFrom": [
-      {
-        "@id": "http://w3id.org/semiconto/StepInfoObj"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#onProperty": [
-      {
-        "@id": "http://w3id.org/semiconto/isDescribedBy"
-      }
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/Material",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "Material"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
-      {
-        "@value": "http://emmo.info/emmo#EMMO_4207e895_8b83_4318_996a_72cfb32acd94"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/semiconto/Matter"
-      },
-      {
-        "@id": "http://www.w3.org/ns/prov#Entity"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/terms/created",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/hasExperimentAim",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "http://w3id.org/semiconto/ExperimentInfoObj"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "has experiment aim"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#string"
-      }
-    ]
-  },
-  {
-    "@id": "http://purl.org/dc/terms/license",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://w3id.org/semiconto/hasExperimentName",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#DatatypeProperty"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#domain": [
-      {
-        "@id": "http://w3id.org/semiconto/ExperimentInfoObj"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@value": "has experiment name"
-      }
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#range": [
-      {
-        "@id": "http://www.w3.org/2001/XMLSchema#string"
-      }
-    ]
-  },
-  {
     "@id": "http://purl.org/vocab/vann/preferredNamespaceUri",
     "@type": [
       "http://www.w3.org/2002/07/owl#AnnotationProperty"
@@ -1283,6 +1267,22 @@
     "@id": "http://www.w3.org/ns/prov#wasAssociatedWith",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/SemicONTO/P-TypeSemiconductor",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "P-Type Semiconductor"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/SemicONTO/ExtrinsicSemiconductor"
+      }
     ]
   }
 ]
