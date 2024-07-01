@@ -1,10 +1,10 @@
-@prefix : <http://w3id.org/semiconto/> .
+@prefix : <http://w3id.org/SemicONTO/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://w3id.org/semiconto/> .
+@base <http://w3id.org/SemicONTO/> .
 
 <http://w3id.org/SemicONTO/> rdf:type owl:Ontology ;
                               owl:versionIRI <http://w3id.org/SemicONTO/0.1/> ;
@@ -82,13 +82,13 @@
               rdfs:label "has structure" .
 
 
-###  http://w3id.org/semiconto/experimentsOn
+###  http://w3id.org/SemicONTO/experimentsOn
 :experimentsOn rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf <http://www.w3.org/ns/prov#used> ;
                rdfs:label "experiments on" .
 
 
-###  http://w3id.org/semiconto/hasAcceptor
+###  http://w3id.org/SemicONTO/hasAcceptor
 :hasAcceptor rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf owl:topObjectProperty ;
              rdfs:domain :ExtrinsicSemiconductor ;
@@ -96,7 +96,7 @@
              rdfs:label "has acceptor" .
 
 
-###  http://w3id.org/semiconto/hasDonor
+###  http://w3id.org/SemicONTO/hasDonor
 :hasDonor rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf owl:topObjectProperty ;
           rdfs:domain :ExtrinsicSemiconductor ;
@@ -104,28 +104,28 @@
           rdfs:label "has donor" .
 
 
-###  http://w3id.org/semiconto/hasEquipment
+###  http://w3id.org/SemicONTO/hasEquipment
 :hasEquipment rdf:type owl:ObjectProperty ;
               rdfs:domain :ExperimentalStep ;
               rdfs:range :Equipment ;
               rdfs:label "has equipment" .
 
 
-###  http://w3id.org/semiconto/hasExperimentalStep
+###  http://w3id.org/SemicONTO/hasExperimentalStep
 :hasExperimentalStep rdf:type owl:ObjectProperty ;
                      rdfs:domain :Experiment ;
                      rdfs:range :ExperimentalStep ;
                      rdfs:label "has experimental step" .
 
 
-###  http://w3id.org/semiconto/hasNextStep
+###  http://w3id.org/SemicONTO/hasNextStep
 :hasNextStep rdf:type owl:ObjectProperty ;
              rdfs:domain :ExperimentalStep ;
              rdfs:range :ExperimentalStep ;
              rdfs:label "has next step" .
 
 
-###  http://w3id.org/semiconto/hasSubStep
+###  http://w3id.org/SemicONTO/hasSubStep
 :hasSubStep rdf:type owl:ObjectProperty ,
                      owl:TransitiveProperty ;
             rdfs:domain :ExperimentalStep ;
@@ -133,7 +133,7 @@
             rdfs:label "has sub-step" .
 
 
-###  http://w3id.org/semiconto/isDescribedBy
+###  http://w3id.org/SemicONTO/isDescribedBy
 :isDescribedBy rdf:type owl:ObjectProperty ;
                rdfs:range :InformationObject ;
                rdfs:label "is described by" .
@@ -157,35 +157,35 @@
 #    Data properties
 #################################################################
 
-###  http://w3id.org/semiconto/hasExperimentAim
+###  http://w3id.org/SemicONTO/hasExperimentAim
 :hasExperimentAim rdf:type owl:DatatypeProperty ;
                   rdfs:domain :ExperimentInfoObj ;
                   rdfs:range xsd:string ;
                   rdfs:label "has experiment aim" .
 
 
-###  http://w3id.org/semiconto/hasExperimentName
+###  http://w3id.org/SemicONTO/hasExperimentName
 :hasExperimentName rdf:type owl:DatatypeProperty ;
                    rdfs:domain :ExperimentInfoObj ;
                    rdfs:range xsd:string ;
                    rdfs:label "has experiment name" .
 
 
-###  http://w3id.org/semiconto/hasExperimentalStepAim
+###  http://w3id.org/SemicONTO/hasExperimentalStepAim
 :hasExperimentalStepAim rdf:type owl:DatatypeProperty ;
                         rdfs:domain :StepInfoObj ;
                         rdfs:range xsd:string ;
                         rdfs:label "has experimental step aim" .
 
 
-###  http://w3id.org/semiconto/hasExperimentalStepDescription
+###  http://w3id.org/SemicONTO/hasExperimentalStepDescription
 :hasExperimentalStepDescription rdf:type owl:DatatypeProperty ;
                                 rdfs:domain :StepInfoObj ;
                                 rdfs:range xsd:string ;
                                 rdfs:label "has experimental step description" .
 
 
-###  http://w3id.org/semiconto/hasExperimentalStepID
+###  http://w3id.org/SemicONTO/hasExperimentalStepID
 :hasExperimentalStepID rdf:type owl:DatatypeProperty ;
                        rdfs:domain :StepInfoObj ;
                        rdfs:range xsd:string .
@@ -212,31 +212,31 @@
 #    Classes
 #################################################################
 
-###  http://w3id.org/semiconto/Acceptor
+###  http://w3id.org/SemicONTO/Acceptor
 :Acceptor rdf:type owl:Class ;
           rdfs:subClassOf :Dopant ;
           rdfs:label "Acceptor" .
 
 
-###  http://w3id.org/semiconto/ChemicalEntity
+###  http://w3id.org/SemicONTO/ChemicalEntity
 :ChemicalEntity rdf:type owl:Class ;
                 rdfs:subClassOf :Matter .
 
 
-###  http://w3id.org/semiconto/ChemicalSubstance
+###  http://w3id.org/SemicONTO/ChemicalSubstance
 :ChemicalSubstance rdf:type owl:Class ;
                    rdfs:subClassOf :ChemicalEntity ;
                    rdfs:seeAlso "http://emmo.info/emmo#EMMO_df96cbb6_b5ee_4222_8eab_b3675df24bea" ,
                                 "http://purl.obolibrary.org/obo/chebi#59999" .
 
 
-###  http://w3id.org/semiconto/Donor
+###  http://w3id.org/SemicONTO/Donor
 :Donor rdf:type owl:Class ;
        rdfs:subClassOf :Dopant ;
        rdfs:label "Donor" .
 
 
-###  http://w3id.org/semiconto/Dopant
+###  http://w3id.org/SemicONTO/Dopant
 :Dopant rdf:type owl:Class ;
         owl:equivalentClass [ rdf:type owl:Class ;
                               owl:unionOf ( :Acceptor
@@ -246,18 +246,18 @@
         rdfs:label "Dopant" .
 
 
-###  http://w3id.org/semiconto/DopingRelation
+###  http://w3id.org/SemicONTO/DopingRelation
 :DopingRelation rdf:type owl:Class ;
                 rdfs:label "Doping Relation" .
 
 
-###  http://w3id.org/semiconto/Equipment
+###  http://w3id.org/SemicONTO/Equipment
 :Equipment rdf:type owl:Class ;
            rdfs:subClassOf <http://www.w3.org/ns/prov#Agent> ;
            rdfs:label "Equipment" .
 
 
-###  http://w3id.org/semiconto/Experiment
+###  http://w3id.org/SemicONTO/Experiment
 :Experiment rdf:type owl:Class ;
             rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ,
                             [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
@@ -293,13 +293,13 @@
             rdfs:label "Experiment" .
 
 
-###  http://w3id.org/semiconto/ExperimentInfoObj
+###  http://w3id.org/SemicONTO/ExperimentInfoObj
 :ExperimentInfoObj rdf:type owl:Class ;
                    rdfs:subClassOf :InformationObject ;
                    rdfs:label "Experiment Information Object" .
 
 
-###  http://w3id.org/semiconto/ExperimentalStep
+###  http://w3id.org/SemicONTO/ExperimentalStep
 :ExperimentalStep rdf:type owl:Class ;
                   rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ,
                                   [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
@@ -327,7 +327,7 @@
                   rdfs:label "Experimental Step" .
 
 
-###  http://w3id.org/semiconto/ExtrinsicSemiconductor
+###  http://w3id.org/SemicONTO/ExtrinsicSemiconductor
 :ExtrinsicSemiconductor rdf:type owl:Class ;
                         rdfs:subClassOf :Semiconductor ,
                                         [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
@@ -356,18 +356,18 @@
                         rdfs:label "Extrinsic Semiconductor" .
 
 
-###  http://w3id.org/semiconto/InformationObject
+###  http://w3id.org/SemicONTO/InformationObject
 :InformationObject rdf:type owl:Class ;
                    rdfs:label "Information Object" .
 
 
-###  http://w3id.org/semiconto/IntrinsicSemiconductor
+###  http://w3id.org/SemicONTO/IntrinsicSemiconductor
 :IntrinsicSemiconductor rdf:type owl:Class ;
                         rdfs:subClassOf :Semiconductor ;
                         rdfs:label "Intrinsic Semiconductor" .
 
 
-###  http://w3id.org/semiconto/Material
+###  http://w3id.org/SemicONTO/Material
 :Material rdf:type owl:Class ;
           rdfs:subClassOf :Matter ,
                           <http://www.w3.org/ns/prov#Entity> ;
@@ -375,33 +375,33 @@
           rdfs:seeAlso "http://emmo.info/emmo#EMMO_4207e895_8b83_4318_996a_72cfb32acd94" .
 
 
-###  http://w3id.org/semiconto/Matter
+###  http://w3id.org/SemicONTO/Matter
 :Matter rdf:type owl:Class ;
         rdfs:comment "A matter is a physical substance." ;
         rdfs:label "Matter" ;
         rdfs:seeAlso "http://emmo.info/emmo#EMMO_5b2222df_4da6_442f_8244_96e9e45887d1" .
 
 
-###  http://w3id.org/semiconto/MolecularEntity
+###  http://w3id.org/SemicONTO/MolecularEntity
 :MolecularEntity rdf:type owl:Class ;
                  rdfs:subClassOf :ChemicalEntity ;
                  rdfs:seeAlso "http://emmo.info/emmo#EMMO_21205421_5783_4d3e_81e5_10c5d894a88a" ,
                               "http://purl.obolibrary.org/obo/chebi#23367" .
 
 
-###  http://w3id.org/semiconto/N-TypeSemiconductor
+###  http://w3id.org/SemicONTO/N-TypeSemiconductor
 :N-TypeSemiconductor rdf:type owl:Class ;
                      rdfs:subClassOf :ExtrinsicSemiconductor ;
                      rdfs:label "N-Type Semiconductor" .
 
 
-###  http://w3id.org/semiconto/P-TypeSemiconductor
+###  http://w3id.org/SemicONTO/P-TypeSemiconductor
 :P-TypeSemiconductor rdf:type owl:Class ;
                      rdfs:subClassOf :ExtrinsicSemiconductor ;
                      rdfs:label "P-Type Semiconductor" .
 
 
-###  http://w3id.org/semiconto/Semiconductor
+###  http://w3id.org/SemicONTO/Semiconductor
 :Semiconductor rdf:type owl:Class ;
                owl:equivalentClass [ rdf:type owl:Class ;
                                      owl:unionOf ( :ExtrinsicSemiconductor
@@ -412,13 +412,13 @@
                rdfs:label "Semiconductor" .
 
 
-###  http://w3id.org/semiconto/SemiconductorExperiment
+###  http://w3id.org/SemicONTO/SemiconductorExperiment
 :SemiconductorExperiment rdf:type owl:Class ;
                          rdfs:subClassOf :Experiment ;
                          rdfs:label "Smiconductor Experiment" .
 
 
-###  http://w3id.org/semiconto/StepInfoObj
+###  http://w3id.org/SemicONTO/StepInfoObj
 :StepInfoObj rdf:type owl:Class ;
              rdfs:subClassOf :InformationObject ;
              rdfs:label "Experimental Step Information Object" .
