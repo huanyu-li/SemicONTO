@@ -1,0 +1,364 @@
+@prefix : <http://w3id.org/SemicONTO/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dcterms:contributor a owl:AnnotationProperty .
+
+dcterms:created a owl:AnnotationProperty .
+
+dcterms:creator a owl:AnnotationProperty .
+
+dcterms:description a owl:AnnotationProperty .
+
+dcterms:isVersionOf a owl:AnnotationProperty .
+
+dcterms:license a owl:AnnotationProperty .
+
+dcterms:modified a owl:AnnotationProperty .
+
+dcterms:rights a owl:AnnotationProperty .
+
+dcterms:title a owl:AnnotationProperty .
+
+vann:preferredNamespacePrefix a owl:AnnotationProperty .
+
+vann:preferredNamespaceUri a owl:AnnotationProperty .
+
+<http://qudt.org/schema/qudt/QuantityValue> a owl:Class .
+
+<http://qudt.org/schema/qudt/Unit> a owl:Class .
+
+<http://qudt.org/schema/qudt/numericValue> a owl:DatatypeProperty .
+
+<http://qudt.org/schema/qudt/quantityValue> a owl:ObjectProperty .
+
+: a owl:Ontology ;
+    dcterms:created "2025-06-24" ;
+    dcterms:creator "Huanyu Li" ;
+    dcterms:license "https://github.com/huanyu-li/SemicONTO/blob/main/LICENSE" ;
+    dcterms:title "Semiconductor ONTOlogy (SemicONTO)" ;
+    vann:preferredNamespacePrefix "semiconto" ;
+    vann:preferredNamespaceUri "http://w3id.org/SemicONTO/0.2/" ;
+    rdfs:seeAlso "https://github.com/huanyu-li/SemicONTO" ;
+    owl:versionIRI <http://w3id.org/SemicONTO/0.2/> ;
+    owl:versionInfo "0.2" .
+
+:CMTExperiment a owl:Class ;
+    rdfs:label "Charge Mobility Testing Experiment" ;
+    rdfs:subClassOf :SemiconductorExperiment .
+
+:ChemicalSubstance a owl:Class ;
+    rdfs:seeAlso "http://emmo.info/emmo#EMMO_df96cbb6_b5ee_4222_8eab_b3675df24bea",
+        "http://purl.obolibrary.org/obo/chebi#59999" ;
+    rdfs:subClassOf :ChemicalEntity .
+
+:DopingRelation a owl:Class ;
+    rdfs:label "Doping Relation" .
+
+:EQETExperiment a owl:Class ;
+    rdfs:label "External Quantum Efficiency Testing Experiment" ;
+    rdfs:subClassOf :SemiconductorExperiment .
+
+:ElectronBeamLithography a owl:Class ;
+    rdfs:label "Electron Beam Lithography" ;
+    rdfs:subClassOf :ExperimentalMethod .
+
+:FieldEffectMeasurement a owl:Class ;
+    rdfs:label "Field-Effect Measurement" ;
+    rdfs:subClassOf :ExperimentalMethod .
+
+:HMTExperiment a owl:Class ;
+    rdfs:label "Hole Mobility Testing Experiment" ;
+    rdfs:subClassOf :SemiconductorExperiment .
+
+:HallEffectMeasurement a owl:Class ;
+    rdfs:label "Hall Effect Measurement" ;
+    rdfs:subClassOf :ExperimentalMethod .
+
+:MolecularEntity a owl:Class ;
+    rdfs:seeAlso "http://emmo.info/emmo#EMMO_21205421_5783_4d3e_81e5_10c5d894a88a",
+        "http://purl.obolibrary.org/obo/chebi#23367" ;
+    rdfs:subClassOf :ChemicalEntity .
+
+:N-TypeSemiconductor a owl:Class ;
+    rdfs:label "N-Type Semiconductor" ;
+    rdfs:subClassOf :ExtrinsicSemiconductor .
+
+:P-TypeSemiconductor a owl:Class ;
+    rdfs:label "P-Type Semiconductor" ;
+    rdfs:subClassOf :ExtrinsicSemiconductor .
+
+:PESExperiment a owl:Class ;
+    rdfs:label "Photoelectron Spectroscopy Experiment" ;
+    rdfs:subClassOf :SemiconductorExperiment .
+
+:PPCExperiment a owl:Class ;
+    rdfs:label "Preparation and Parameter Characterization Experiment" ;
+    rdfs:subClassOf :SemiconductorExperiment .
+
+:PhotoelectronSpectroscopy a owl:Class ;
+    rdfs:label "Photoelectron Spectroscopy" ;
+    rdfs:subClassOf :ExperimentalMethod .
+
+:SEDFabrication a owl:Class ;
+    rdfs:label "Single Electron Device (SED) Fabrication" ;
+    rdfs:subClassOf :SemiconductorExperiment .
+
+:SpectralResponseMeasurement a owl:Class ;
+    rdfs:label "Spectral Response Measurement" ;
+    rdfs:subClassOf :ExperimentalMethod .
+
+:ThermalEvaporation a owl:Class ;
+    rdfs:label "Thermal Evaporation" ;
+    rdfs:subClassOf :ExperimentalMethod .
+
+:experimentsFor a owl:ObjectProperty ;
+    rdfs:label "experiments for" ;
+    rdfs:subPropertyOf prov:used .
+
+:hasExperimentAim a owl:DatatypeProperty ;
+    rdfs:label "has experiment aim" ;
+    rdfs:domain :ExperimentInfoObj ;
+    rdfs:range xsd:string .
+
+:hasExperimentName a owl:DatatypeProperty ;
+    rdfs:label "has experiment name" ;
+    rdfs:domain :ExperimentInfoObj ;
+    rdfs:range xsd:string .
+
+:hasExperimentalStepAim a owl:DatatypeProperty ;
+    rdfs:label "has experimental step aim" ;
+    rdfs:domain :StepInfoObj ;
+    rdfs:range xsd:string .
+
+:hasExperimentalStepDescription a owl:DatatypeProperty ;
+    rdfs:label "has experimental step description" ;
+    rdfs:domain :StepInfoObj ;
+    rdfs:range xsd:string .
+
+:hasExperimentalStepID a owl:DatatypeProperty ;
+    rdfs:domain :StepInfoObj ;
+    rdfs:range xsd:string .
+
+:hasMeasuredProperty a owl:ObjectProperty ;
+    rdfs:label "has measured property" ;
+    rdfs:domain :Experiment ;
+    rdfs:range :MaterialProperty .
+
+:hasNextStep a owl:ObjectProperty ;
+    rdfs:label "has next step" ;
+    rdfs:domain :ExperimentalStep ;
+    rdfs:range :ExperimentalStep .
+
+:hasProperty a owl:ObjectProperty ;
+    rdfs:label "has property" ;
+    rdfs:domain :Material ;
+    rdfs:range :MaterialProperty .
+
+:hasStructure a owl:ObjectProperty ;
+    rdfs:label "has structure" ;
+    rdfs:domain :Material ;
+    rdfs:range <https://w3id.org/mdo/core/Structure> .
+
+:hasSubStep a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:label "has sub-step" ;
+    rdfs:domain :ExperimentalStep ;
+    rdfs:range :ExperimentalStep .
+
+prov:endedAtTime a owl:DatatypeProperty ;
+    rdfs:domain prov:Activity ;
+    rdfs:range xsd:dateTime .
+
+prov:startedAtTime a owl:DatatypeProperty ;
+    rdfs:domain prov:Activity ;
+    rdfs:range xsd:dateTime .
+
+prov:wasAssociatedWith a owl:ObjectProperty .
+
+<https://w3id.org/mdo/structure/Composition> a owl:Class ;
+    rdfs:label "Composition" ;
+    rdfs:seeAlso "https://w3id.org/mdo/structure/Composition" .
+
+<https://w3id.org/mdo/structure/DescriptiveFormula> a owl:DatatypeProperty ;
+    rdfs:comment "descriptive formula" .
+
+<https://w3id.org/mdo/structure/hasComposition> a owl:ObjectProperty ;
+    rdfs:label "has composition" ;
+    rdfs:seeAlso "https://w3id.org/mdo/structure/hasComposition" .
+
+<http://qudt.org/schema/qudt/Quantity> a owl:Class .
+
+:Acceptor a owl:Class ;
+    rdfs:label "Acceptor" ;
+    rdfs:subClassOf :Dopant .
+
+:Donor a owl:Class ;
+    rdfs:label "Donor" ;
+    rdfs:subClassOf :Dopant .
+
+:experimentsOn a owl:ObjectProperty ;
+    rdfs:label "experiments on" ;
+    rdfs:subPropertyOf prov:used .
+
+:hasExperimentalMethod a owl:ObjectProperty ;
+    rdfs:label "has experimental method" ;
+    rdfs:domain :Experiment ;
+    rdfs:range :ExperimentalMethod .
+
+prov:Agent a owl:Class .
+
+prov:Entity a owl:Class .
+
+<https://w3id.org/mdo/core/Structure> a owl:Class ;
+    rdfs:label "Structure" ;
+    rdfs:seeAlso "https://w3id.org/mdo/core/Structure" .
+
+:ChemicalEntity a owl:Class ;
+    rdfs:subClassOf :Matter .
+
+:Dopant a owl:Class ;
+    rdfs:label "Dopant" ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf ( :Acceptor :Donor ) ] .
+
+:IntrinsicSemiconductor a owl:Class ;
+    rdfs:label "Intrinsic Semiconductor" ;
+    rdfs:subClassOf :Semiconductor .
+
+:MaterialProperty a owl:Class ;
+    rdfs:label "Material Property" ;
+    rdfs:subClassOf <http://qudt.org/schema/qudt/Quantity> .
+
+:Matter a owl:Class ;
+    rdfs:label "Matter" ;
+    rdfs:comment "A matter is a physical substance." ;
+    rdfs:seeAlso "http://emmo.info/emmo#EMMO_5b2222df_4da6_442f_8244_96e9e45887d1" .
+
+:Semiconductor a owl:Class ;
+    rdfs:label "Semiconductor" ;
+    rdfs:subClassOf :Material ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf ( :ExtrinsicSemiconductor :IntrinsicSemiconductor ) ] .
+
+:hasAcceptor a owl:ObjectProperty ;
+    rdfs:label "has acceptor" ;
+    rdfs:domain :ExtrinsicSemiconductor ;
+    rdfs:range :Material ;
+    rdfs:subPropertyOf owl:topObjectProperty .
+
+:hasDonor a owl:ObjectProperty ;
+    rdfs:label "has donor" ;
+    rdfs:domain :ExtrinsicSemiconductor ;
+    rdfs:range :Material ;
+    rdfs:subPropertyOf owl:topObjectProperty .
+
+:hasExperimentalStep a owl:ObjectProperty ;
+    rdfs:label "has experimental step" ;
+    rdfs:domain :Experiment ;
+    rdfs:range :ExperimentalStep .
+
+prov:used a owl:ObjectProperty .
+
+:InformationObject a owl:Class ;
+    rdfs:label "Information Object" .
+
+:hasEquipment a owl:ObjectProperty ;
+    rdfs:label "has equipment" ;
+    rdfs:domain :ExperimentalStep ;
+    rdfs:range :Equipment .
+
+:Equipment a owl:Class ;
+    rdfs:label "Equipment" ;
+    rdfs:subClassOf prov:Agent .
+
+:Experiment a owl:Class ;
+    rdfs:label "Experiment" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty :experimentsOn ;
+            owl:someValuesFrom :Material ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasEquipment ;
+            owl:someValuesFrom :Equipment ],
+        [ a owl:Restriction ;
+            owl:onProperty :hasExperimentalMethod ;
+            owl:someValuesFrom :ExperimentalMethod ],
+        [ a owl:Class ;
+            owl:intersectionOf ( [ a owl:Restriction ;
+                        owl:onProperty :hasExperimentalStep ;
+                        owl:someValuesFrom :ExperimentalStep ] [ a owl:Restriction ;
+                        owl:allValuesFrom :ExperimentalStep ;
+                        owl:onProperty :hasExperimentalStep ] ) ],
+        [ a owl:Class ;
+            owl:intersectionOf ( [ a owl:Restriction ;
+                        owl:onProperty :isDescribedBy ;
+                        owl:someValuesFrom :ExperimentInfoObj ] [ a owl:Restriction ;
+                        owl:allValuesFrom :ExperimentInfoObj ;
+                        owl:onProperty :isDescribedBy ] ) ],
+        prov:Activity .
+
+:ExperimentInfoObj a owl:Class ;
+    rdfs:label "Experiment Information Object" ;
+    rdfs:subClassOf :InformationObject .
+
+:isDescribedBy a owl:ObjectProperty ;
+    rdfs:label "is described by" ;
+    rdfs:range :InformationObject .
+
+prov:Activity a owl:Class .
+
+:ExtrinsicSemiconductor a owl:Class ;
+    rdfs:label "Extrinsic Semiconductor" ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( [ a owl:Restriction ;
+                        owl:onProperty :hasAcceptor ;
+                        owl:someValuesFrom :Material ] [ a owl:Restriction ;
+                        owl:allValuesFrom :Material ;
+                        owl:onProperty :hasAcceptor ] ) ],
+        [ a owl:Class ;
+            owl:intersectionOf ( [ a owl:Restriction ;
+                        owl:onProperty :hasDonor ;
+                        owl:someValuesFrom :Material ] [ a owl:Restriction ;
+                        owl:allValuesFrom :Material ;
+                        owl:onProperty :hasDonor ] ) ],
+        :Semiconductor ;
+    owl:disjointWith :IntrinsicSemiconductor .
+
+:StepInfoObj a owl:Class ;
+    rdfs:label "Experimental Step Information Object" ;
+    rdfs:subClassOf :InformationObject .
+
+:SemiconductorExperiment a owl:Class ;
+    rdfs:label "Semiconductor Experiment" ;
+    rdfs:subClassOf :Experiment .
+
+:ExperimentalMethod a owl:Class ;
+    rdfs:label "Experimental Method" .
+
+:ExperimentalStep a owl:Class ;
+    rdfs:label "Experimental Step" ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( [ a owl:Restriction ;
+                        owl:onProperty :hasEquipment ;
+                        owl:someValuesFrom :Equipment ] [ a owl:Restriction ;
+                        owl:allValuesFrom :Equipment ;
+                        owl:onProperty :hasEquipment ] ) ],
+        [ a owl:Class ;
+            owl:intersectionOf ( [ a owl:Restriction ;
+                        owl:onProperty :isDescribedBy ;
+                        owl:someValuesFrom :StepInfoObj ] [ a owl:Restriction ;
+                        owl:allValuesFrom :StepInfoObj ;
+                        owl:onProperty :isDescribedBy ] ) ],
+        prov:Activity .
+
+:Material a owl:Class ;
+    rdfs:label "Material" ;
+    rdfs:seeAlso "http://emmo.info/emmo#EMMO_4207e895_8b83_4318_996a_72cfb32acd94" ;
+    rdfs:subClassOf :Matter,
+        prov:Entity .
+
