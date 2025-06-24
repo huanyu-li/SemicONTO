@@ -486,12 +486,12 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.obolibrary.org/obo/chebi#59999",
+        "value" : "http://emmo.info/emmo#EMMO_df96cbb6_b5ee_4222_8eab_b3675df24bea",
         "type" : "label"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://emmo.info/emmo#EMMO_df96cbb6_b5ee_4222_8eab_b3675df24bea",
+        "value" : "http://purl.obolibrary.org/obo/chebi#59999",
         "type" : "label"
       } ]
     },
@@ -710,7 +710,7 @@
       "IRI-based" : "startedAtTime"
     },
     "domain" : "1",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "0"
   }, {
     "range" : "5",
@@ -726,7 +726,7 @@
     },
     "domain" : "10",
     "subproperty" : [ "11", "12" ],
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "9"
   }, {
     "iri" : "http://w3id.org/SemicONTO/hasNextStep",
@@ -750,7 +750,7 @@
     "comment" : {
       "undefined" : "descriptive formula"
     },
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "16"
   }, {
     "range" : "5",
@@ -782,7 +782,7 @@
     },
     "domain" : "10",
     "subproperty" : [ "31", "32" ],
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "30"
   }, {
     "range" : "35",
@@ -808,7 +808,7 @@
       "IRI-based" : "wasAssociatedWith"
     },
     "domain" : "10",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "39"
   }, {
     "range" : "14",
@@ -908,7 +908,7 @@
       "IRI-based" : "endedAtTime"
     },
     "domain" : "1",
-    "attributes" : [ "external", "datatype" ],
+    "attributes" : [ "datatype", "external" ],
     "id" : "58"
   }, {
     "iri" : "http://w3id.org/SemicONTO/hasSubStep",
@@ -919,7 +919,7 @@
       "undefined" : "has sub-step"
     },
     "domain" : "7",
-    "attributes" : [ "transitive", "object" ],
+    "attributes" : [ "object", "transitive" ],
     "id" : "60"
   }, {
     "iri" : "http://w3id.org/SemicONTO/isDescribedBy",
@@ -1010,7 +1010,7 @@
       "undefined" : "has equipment"
     },
     "domain" : "6",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "75"
   }, {
     "range" : "24",
@@ -1027,7 +1027,7 @@
     },
     "superproperty" : [ "9" ],
     "domain" : "6",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "77"
   }, {
     "iri" : "https://w3id.org/mdo/structure/hasComposition",
@@ -1046,7 +1046,7 @@
       "undefined" : "has composition"
     },
     "domain" : "10",
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "78"
   }, {
     "iri" : "http://w3id.org/SemicONTO/hasDonor",
