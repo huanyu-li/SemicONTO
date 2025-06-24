@@ -22,6 +22,12 @@
     ]
   },
   {
+    "@id": "http://www.w3.org/ns/prov#Agent",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
     "@id": "http://w3id.org/SemicONTO/hasDonor",
     "@type": [
       "http://www.w3.org/2002/07/owl#ObjectProperty"
@@ -48,9 +54,19 @@
     ]
   },
   {
-    "@id": "http://www.w3.org/ns/prov#Agent",
+    "@id": "http://w3id.org/SemicONTO/ElectronBeamLithography",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Electron Beam Lithography"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/SemicONTO/ExperimentalMethod"
+      }
     ]
   },
   {
@@ -97,6 +113,33 @@
     ]
   },
   {
+    "@id": "http://w3id.org/SemicONTO/EQETExperiment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "External Quantum Efficiency Testing Experiment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/SemicONTO/SemiconductorExperiment"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/SemicONTO/ExperimentalMethod",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Experimental Method"
+      }
+    ]
+  },
+  {
     "@id": "http://purl.org/dc/terms/license",
     "@type": [
       "http://www.w3.org/2002/07/owl#AnnotationProperty"
@@ -106,17 +149,6 @@
     "@id": "http://purl.org/dc/terms/title",
     "@type": [
       "http://www.w3.org/2002/07/owl#AnnotationProperty"
-    ]
-  },
-  {
-    "@id": "http://w3id.org/SemicONTO/ChemicalEntity",
-    "@type": [
-      "http://www.w3.org/2002/07/owl#Class"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
-      {
-        "@id": "http://w3id.org/SemicONTO/Matter"
-      }
     ]
   },
   {
@@ -131,12 +163,12 @@
     ],
     "http://www.w3.org/2002/07/owl#equivalentClass": [
       {
-        "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b1"
+        "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b1"
       }
     ]
   },
   {
-    "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b1",
+    "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b1",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -150,6 +182,17 @@
             "@id": "http://w3id.org/SemicONTO/Donor"
           }
         ]
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/SemicONTO/ChemicalEntity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/SemicONTO/Matter"
       }
     ]
   },
@@ -213,12 +256,12 @@
     ],
     "http://www.w3.org/2002/07/owl#equivalentClass": [
       {
-        "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b36"
+        "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b37"
       }
     ]
   },
   {
-    "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b36",
+    "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b37",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -252,6 +295,22 @@
     ]
   },
   {
+    "@id": "http://w3id.org/SemicONTO/SEDFabrication",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Single Electron Device (SED) Fabrication"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/SemicONTO/SemiconductorExperiment"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/mdo/structure/DescriptiveFormula",
     "@type": [
       "http://www.w3.org/2002/07/owl#DatatypeProperty"
@@ -266,6 +325,12 @@
     "@id": "http://purl.org/vocab/vann/preferredNamespaceUri",
     "@type": [
       "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/Unit",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
     ]
   },
   {
@@ -305,10 +370,10 @@
         "@id": "http://w3id.org/SemicONTO/Semiconductor"
       },
       {
-        "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b26"
+        "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b27"
       },
       {
-        "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b31"
+        "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b32"
       }
     ],
     "http://www.w3.org/2002/07/owl#disjointWith": [
@@ -318,7 +383,7 @@
     ]
   },
   {
-    "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b26",
+    "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b27",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -326,17 +391,17 @@
       {
         "@list": [
           {
-            "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b27"
+            "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b28"
           },
           {
-            "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b28"
+            "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b29"
           }
         ]
       }
     ]
   },
   {
-    "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b27",
+    "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b28",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -352,7 +417,7 @@
     ]
   },
   {
-    "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b28",
+    "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b29",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -368,7 +433,7 @@
     ]
   },
   {
-    "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b31",
+    "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b32",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -376,17 +441,17 @@
       {
         "@list": [
           {
-            "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b32"
+            "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b33"
           },
           {
-            "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b33"
+            "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b34"
           }
         ]
       }
     ]
   },
   {
-    "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b32",
+    "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b33",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -402,7 +467,7 @@
     ]
   },
   {
-    "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b33",
+    "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b34",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -452,13 +517,19 @@
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
-        "@value": "Smiconductor Experiment"
+        "@value": "Semiconductor Experiment"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
         "@id": "http://w3id.org/SemicONTO/Experiment"
       }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/numericValue",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#DatatypeProperty"
     ]
   },
   {
@@ -474,7 +545,7 @@
     ],
     "http://purl.org/dc/terms/created": [
       {
-        "@value": "2023-03-21"
+        "@value": "2025-06-24"
       }
     ],
     "http://purl.org/dc/terms/creator": [
@@ -499,7 +570,7 @@
     ],
     "http://purl.org/vocab/vann/preferredNamespaceUri": [
       {
-        "@value": "http://w3id.org/SemicONTO/0.1/"
+        "@value": "http://w3id.org/SemicONTO/0.2/"
       }
     ],
     "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
@@ -509,12 +580,12 @@
     ],
     "http://www.w3.org/2002/07/owl#versionIRI": [
       {
-        "@id": "http://w3id.org/SemicONTO/0.1/"
+        "@id": "http://w3id.org/SemicONTO/0.2/"
       }
     ],
     "http://www.w3.org/2002/07/owl#versionInfo": [
       {
-        "@value": "0.1"
+        "@value": "0.2"
       }
     ]
   },
@@ -702,6 +773,28 @@
     ]
   },
   {
+    "@id": "http://qudt.org/schema/qudt/QuantityValue",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/SemicONTO/CMTExperiment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Charge Mobility Testing Experiment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/SemicONTO/SemiconductorExperiment"
+      }
+    ]
+  },
+  {
     "@id": "https://w3id.org/mdo/core/Structure",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
@@ -730,6 +823,75 @@
     "http://www.w3.org/2000/01/rdf-schema#seeAlso": [
       {
         "@value": "https://w3id.org/mdo/structure/hasComposition"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/SemicONTO/HMTExperiment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Hole Mobility Testing Experiment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/SemicONTO/SemiconductorExperiment"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/SemicONTO/HallEffectMeasurement",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Hall Effect Measurement"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/SemicONTO/ExperimentalMethod"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/SemicONTO/PhotoelectronSpectroscopy",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Photoelectron Spectroscopy"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/SemicONTO/ExperimentalMethod"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/SemicONTO/hasProperty",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/SemicONTO/Material"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "has property"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/SemicONTO/MaterialProperty"
       }
     ]
   },
@@ -771,6 +933,12 @@
     ]
   },
   {
+    "@id": "http://qudt.org/schema/qudt/Quantity",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ]
+  },
+  {
     "@id": "http://w3id.org/SemicONTO/ExperimentalStep",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
@@ -785,15 +953,15 @@
         "@id": "http://www.w3.org/ns/prov#Activity"
       },
       {
-        "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b16"
+        "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b17"
       },
       {
-        "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b21"
+        "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b22"
       }
     ]
   },
   {
-    "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b16",
+    "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b17",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -801,17 +969,17 @@
       {
         "@list": [
           {
-            "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b17"
+            "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b18"
           },
           {
-            "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b18"
+            "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b19"
           }
         ]
       }
     ]
   },
   {
-    "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b17",
+    "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b18",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -827,7 +995,7 @@
     ]
   },
   {
-    "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b18",
+    "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b19",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -843,7 +1011,7 @@
     ]
   },
   {
-    "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b21",
+    "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b22",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -851,17 +1019,17 @@
       {
         "@list": [
           {
-            "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b22"
+            "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b23"
           },
           {
-            "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b23"
+            "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b24"
           }
         ]
       }
     ]
   },
   {
-    "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b22",
+    "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b23",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -877,7 +1045,7 @@
     ]
   },
   {
-    "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b23",
+    "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b24",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -905,6 +1073,22 @@
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
         "@id": "http://w3id.org/SemicONTO/ExtrinsicSemiconductor"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/SemicONTO/PPCExperiment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Preparation and Parameter Characterization Experiment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/SemicONTO/SemiconductorExperiment"
       }
     ]
   },
@@ -946,6 +1130,38 @@
     ]
   },
   {
+    "@id": "http://w3id.org/SemicONTO/ThermalEvaporation",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Thermal Evaporation"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/SemicONTO/ExperimentalMethod"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/SemicONTO/PESExperiment",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Photoelectron Spectroscopy Experiment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/SemicONTO/SemiconductorExperiment"
+      }
+    ]
+  },
+  {
     "@id": "http://w3id.org/SemicONTO/Equipment",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
@@ -958,6 +1174,22 @@
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
         "@id": "http://www.w3.org/ns/prov#Agent"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/SemicONTO/MaterialProperty",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Material Property"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://qudt.org/schema/qudt/Quantity"
       }
     ]
   },
@@ -984,6 +1216,27 @@
     ]
   },
   {
+    "@id": "http://w3id.org/SemicONTO/hasExperimentalMethod",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/SemicONTO/Experiment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "has experimental method"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/SemicONTO/ExperimentalMethod"
+      }
+    ]
+  },
+  {
     "@id": "http://purl.org/dc/terms/rights",
     "@type": [
       "http://www.w3.org/2002/07/owl#AnnotationProperty"
@@ -1004,21 +1257,24 @@
         "@id": "http://www.w3.org/ns/prov#Activity"
       },
       {
-        "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b4"
+        "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b4"
       },
       {
-        "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b9"
+        "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b9"
       },
       {
-        "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b14"
+        "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b14"
       },
       {
-        "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b15"
+        "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b15"
+      },
+      {
+        "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b16"
       }
     ]
   },
   {
-    "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b4",
+    "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b4",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -1026,17 +1282,17 @@
       {
         "@list": [
           {
-            "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b5"
+            "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b5"
           },
           {
-            "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b6"
+            "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b6"
           }
         ]
       }
     ]
   },
   {
-    "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b5",
+    "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b5",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -1052,7 +1308,7 @@
     ]
   },
   {
-    "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b6",
+    "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b6",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -1068,7 +1324,7 @@
     ]
   },
   {
-    "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b9",
+    "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b9",
     "@type": [
       "http://www.w3.org/2002/07/owl#Class"
     ],
@@ -1076,17 +1332,17 @@
       {
         "@list": [
           {
-            "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b10"
+            "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b10"
           },
           {
-            "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b11"
+            "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b11"
           }
         ]
       }
     ]
   },
   {
-    "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b10",
+    "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b10",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -1102,7 +1358,7 @@
     ]
   },
   {
-    "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b11",
+    "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b11",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -1118,7 +1374,7 @@
     ]
   },
   {
-    "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b14",
+    "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b14",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -1134,7 +1390,7 @@
     ]
   },
   {
-    "@id": "_:n3cc3aa4ea00e4eb491140d8a546974c4b15",
+    "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b15",
     "@type": [
       "http://www.w3.org/2002/07/owl#Restriction"
     ],
@@ -1146,6 +1402,22 @@
     "http://www.w3.org/2002/07/owl#someValuesFrom": [
       {
         "@id": "http://w3id.org/SemicONTO/Equipment"
+      }
+    ]
+  },
+  {
+    "@id": "_:n2c34b0a43bb245ce8b1ec3319abcc877b16",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Restriction"
+    ],
+    "http://www.w3.org/2002/07/owl#onProperty": [
+      {
+        "@id": "http://w3id.org/SemicONTO/hasExperimentalMethod"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#someValuesFrom": [
+      {
+        "@id": "http://w3id.org/SemicONTO/ExperimentalMethod"
       }
     ]
   },
@@ -1207,6 +1479,49 @@
     "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
       {
         "@id": "http://w3id.org/SemicONTO/ChemicalEntity"
+      }
+    ]
+  },
+  {
+    "@id": "http://w3id.org/SemicONTO/hasMeasuredProperty",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#domain": [
+      {
+        "@id": "http://w3id.org/SemicONTO/Experiment"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "has measured property"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#range": [
+      {
+        "@id": "http://w3id.org/SemicONTO/MaterialProperty"
+      }
+    ]
+  },
+  {
+    "@id": "http://qudt.org/schema/qudt/quantityValue",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/SemicONTO/SpectralResponseMeasurement",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Spectral Response Measurement"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/SemicONTO/ExperimentalMethod"
       }
     ]
   },
@@ -1283,6 +1598,22 @@
     "@id": "http://purl.org/dc/terms/description",
     "@type": [
       "http://www.w3.org/2002/07/owl#AnnotationProperty"
+    ]
+  },
+  {
+    "@id": "http://w3id.org/SemicONTO/FieldEffectMeasurement",
+    "@type": [
+      "http://www.w3.org/2002/07/owl#Class"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@value": "Field-Effect Measurement"
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf": [
+      {
+        "@id": "http://w3id.org/SemicONTO/ExperimentalMethod"
+      }
     ]
   }
 ]
