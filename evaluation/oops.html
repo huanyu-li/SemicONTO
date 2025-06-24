@@ -1,0 +1,361 @@
+<html>
+    <head>
+        <title>
+            OOPS! Report Summary
+        </title>
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="css/dataTables.bootstrap5.css" rel="stylesheet"/>
+        <script src="js/jquery-3.7.1.js">
+        </script>
+        <script src="js/bootstrap.bundle.min.js">
+        </script>
+        <script src="js/dataTables.js">
+        </script>
+        <script src="js/dataTables.bootstrap5.js">
+        </script>
+        <link href="css/style.css" rel="stylesheet"/>
+    </head>
+    <script>
+        window.onload = () => {
+                    $('#oops-table thead tr')
+                        .clone(true)
+                        .addClass('filters')
+                        .appendTo('#oops-table thead');
+                        
+                    let table = $('#oops-table').DataTable({
+                            orderCellsTop: true,
+                            pageLength: 50,
+                            initComplete: function () {
+                                let api = this.api();
+                    
+                                // For each column
+                                api
+                                    .columns()
+                                    .eq(0)
+                                    .each(function (colIdx) {
+                                        // Set the header cell to contain the input element
+                                        let cell = $('.filters th').eq(
+                                            $(api.column(colIdx).header()).index()
+                                        );
+                                        let title = $(cell).text().trim();
+                                        $(cell).html('<input type="text" placeholder="' + title + '" />');
+                    
+                                        // On every keypress in this input
+                                        $(
+                                            'input',
+                                            $('.filters th').eq($(api.column(colIdx).header()).index())
+                                        )
+                                            .off('keyup change')
+                                            .on('change', function (e) {
+                                                // Get the search value
+                                                $(this).attr('title', $(this).val());
+                                                let regexr = '({search})'; //$(this).parents('th').find('select').val();
+                    
+                                                let cursorPosition = this.selectionStart;
+                                                // Search the column for that value
+                                                api
+                                                    .column(colIdx)
+                                                    .search(
+                                                        this.value != ''
+                                                            ? regexr.replace('{search}', '(((' + this.value + ')))')
+                                                            : '',
+                                                        this.value != '',
+                                                        this.value == ''
+                                                    )
+                                                    .draw();
+                                            })
+                                            .on('keyup', function (e) {
+                                                e.stopPropagation();
+                    
+                                                $(this).trigger('change');
+                                                $(this)
+                                                    .focus()[0]
+                                                    .setSelectionRange(cursorPosition, cursorPosition);
+                                            });
+                                    });
+                            },
+                        });
+                }
+    </script>
+    <body>
+        <h1>
+            OOPS! Report Summary
+        </h1>
+        <table class="table table-striped table-hover dataTable" id="oops-table" width="100%">
+            <thead>
+                <tr>
+                    <th>
+                        Module
+                    </th>
+                    <th>
+                        Pitfall Name
+                    </th>
+                    <th>
+                        Code
+                    </th>
+                    <th>
+                        Level
+                    </th>
+                    <th>
+                        Affected Elements
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        semiconto
+                    </td>
+                    <td title='The ontology elements are not named following the same convention (for example CamelCase or use of delimiters as "-" or "_") . Some notions about naming conventions are provided in [2].	'>
+                        Using different naming conventions in the ontology
+                    </td>
+                    <td>
+                        P22
+                    </td>
+                    <td>
+                        Minor
+                    </td>
+                    <td>
+                        There are elements following different naming conventions as for example: http://w3id.org/semiconto/P-TypeSemiconductor http://w3id.org/semiconto/ChemicalEntity
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        semiconto
+                    </td>
+                    <td title="Object and/or datatype properties without domain or range (or none of them) are included in the ontology. 	">
+                        Missing domain or range in properties
+                    </td>
+                    <td>
+                        P11
+                    </td>
+                    <td>
+                        Important
+                    </td>
+                    <td>
+                        http://w3id.org/semiconto/hasExperimentalOutput,
+                        <br/>
+                        http://w3id.org/semiconto/hasExperimentalInput,
+                        <br/>
+                        http://w3id.org/semiconto/hasDopingRelation,
+                        <br/>
+                        http://w3id.org/semiconto/hasAcceptor,
+                        <br/>
+                        http://www.w3.org/ns/prov#wasAssociatedWith,
+                        <br/>
+                        http://w3id.org/semiconto/hasDonor
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        semiconto
+                    </td>
+                    <td title="This pitfall consists in creating an ontology element and failing to provide human readable annotations attached to it. Consequently, ontology elements lack annotation properties that label them (e.g. rdfs:label, lemon:LexicalEntry, skos:prefLabel or skos:altLabel) or that define them (e.g. rdfs:comment or dc:description). This pitfall is related to the guidelines provided in [5].	">
+                        Missing annotations
+                    </td>
+                    <td>
+                        P08
+                    </td>
+                    <td>
+                        Minor
+                    </td>
+                    <td>
+                        http://w3id.org/semiconto/ThermalProperty,
+                        <br/>
+                        http://w3id.org/semiconto/hasExperimentalOutput,
+                        <br/>
+                        http://qudt.org/schema/qudt/Quantity,
+                        <br/>
+                        http://w3id.org/semiconto/hasDonor,
+                        <br/>
+                        http://w3id.org/semiconto/N-TypeSemiconductor,
+                        <br/>
+                        http://w3id.org/semiconto/AbsorptionCofficient,
+                        <br/>
+                        http://w3id.org/semiconto/DopingRelation,
+                        <br/>
+                        http://w3id.org/semiconto/Donor,
+                        <br/>
+                        http://w3id.org/semiconto/P-TypeSemiconductor,
+                        <br/>
+                        http://w3id.org/semiconto/MeltingPoint,
+                        <br/>
+                        http://w3id.org/semiconto/Material,
+                        <br/>
+                        http://w3id.org/semiconto/Acceptor,
+                        <br/>
+                        http://w3id.org/semiconto/SemiconductorStructure,
+                        <br/>
+                        http://www.w3.org/ns/prov#wasAssociatedWith,
+                        <br/>
+                        http://w3id.org/semiconto/hasSemiconductorType,
+                        <br/>
+                        http://w3id.org/semiconto/Condition,
+                        <br/>
+                        http://w3id.org/semiconto/InfraredRefractiveIndex,
+                        <br/>
+                        http://w3id.org/semiconto/ExtrincSemiconductor,
+                        <br/>
+                        https://w3id.org/mdo/core/Calculation,
+                        <br/>
+                        http://w3id.org/semiconto/hasCondition,
+                        <br/>
+                        http://w3id.org/semiconto/Property,
+                        <br/>
+                        http://w3id.org/semiconto/SpecificHeat,
+                        <br/>
+                        http://w3id.org/semiconto/OpticalPhotonEnergy,
+                        <br/>
+                        http://w3id.org/semiconto/ElectronThermalVelocity,
+                        <br/>
+                        http://w3id.org/semiconto/ThermalExpansion,
+                        <br/>
+                        http://w3id.org/semiconto/hasDopingRelation,
+                        <br/>
+                        http://w3id.org/semiconto/MolecularEntity,
+                        <br/>
+                        http://w3id.org/semiconto/hasAcceptor,
+                        <br/>
+                        http://w3id.org/semiconto/IntrinsicSemiconductor,
+                        <br/>
+                        http://w3id.org/semiconto/MechanicalProperty,
+                        <br/>
+                        http://www.w3.org/ns/prov#Agent,
+                        <br/>
+                        http://w3id.org/semiconto/ElectronIonizationRate,
+                        <br/>
+                        http://w3id.org/semiconto/Experiment,
+                        <br/>
+                        http://w3id.org/semiconto/StaticDielectricConstant,
+                        <br/>
+                        http://w3id.org/semiconto/SemiconductorMaterial,
+                        <br/>
+                        http://w3id.org/semiconto/ChemicalSubstance,
+                        <br/>
+                        http://w3id.org/semiconto/BulkModulus,
+                        <br/>
+                        http://w3id.org/semiconto/Dopant,
+                        <br/>
+                        http://w3id.org/semiconto/MobilityElectrons,
+                        <br/>
+                        http://w3id.org/semiconto/DiffusionCofficientElectrons,
+                        <br/>
+                        http://w3id.org/semiconto/HoleIonizationRate,
+                        <br/>
+                        http://w3id.org/semiconto/DiffusionCofficientHoles,
+                        <br/>
+                        http://w3id.org/semiconto/BreakdownField,
+                        <br/>
+                        http://w3id.org/semiconto/ElectricalProperty,
+                        <br/>
+                        http://w3id.org/semiconto/RadiativeRecombinationCofficient,
+                        <br/>
+                        http://w3id.org/semiconto/hasExperimentalInput,
+                        <br/>
+                        http://w3id.org/semiconto/HoleThermalVelocity,
+                        <br/>
+                        http://w3id.org/semiconto/hasDopingParticipant,
+                        <br/>
+                        http://w3id.org/semiconto/ElectronDriftVelocity,
+                        <br/>
+                        http://w3id.org/semiconto/ExperimentalEquipment,
+                        <br/>
+                        http://w3id.org/semiconto/OpticalProperty,
+                        <br/>
+                        http://w3id.org/semiconto/SemiconductorKind,
+                        <br/>
+                        http://qudt.org/schema/qudt/QuantityKind,
+                        <br/>
+                        http://w3id.org/semiconto/TemperatureCondition,
+                        <br/>
+                        http://w3id.org/semiconto/AtmosphericPressureCondition,
+                        <br/>
+                        http://w3id.org/semiconto/ChemicalEntity,
+                        <br/>
+                        http://w3id.org/semiconto/relatesToMaterial,
+                        <br/>
+                        http://w3id.org/semiconto/ThermalDiffusivity,
+                        <br/>
+                        http://w3id.org/semiconto/MobilityHoles,
+                        <br/>
+                        http://w3id.org/semiconto/ThermalConductivity
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        semiconto
+                    </td>
+                    <td title="The ontology lacks disjoint axioms between classes or between properties that should be defined as disjoint. This pitfall is related with the guidelines provided in [6], [2] and [7].	">
+                        Missing disjointness
+                    </td>
+                    <td>
+                        P10
+                    </td>
+                    <td>
+                        Important
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        semiconto
+                    </td>
+                    <td title="This pitfall appears when any relationship (except for those that are defined as symmetric properties using owl:SymmetricProperty) does not have an inverse relationship (owl:inverseOf) defined within the ontology.	">
+                        Inverse relationships not explicitly declared
+                    </td>
+                    <td>
+                        P13
+                    </td>
+                    <td>
+                        Minor
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        semiconto
+                    </td>
+                    <td title="Ontology elements (classes, object properties and datatype properties) are created isolated, with no relation to the rest of the ontology.	">
+                        Creating unconnected ontology elements
+                    </td>
+                    <td>
+                        P04
+                    </td>
+                    <td>
+                        Minor
+                    </td>
+                    <td>
+                        http://qudt.org/schema/qudt/Quantity,
+                        <br/>
+                        https://w3id.org/mdo/core/Calculation,
+                        <br/>
+                        http://qudt.org/schema/qudt/QuantityKind,
+                        <br/>
+                        http://www.w3.org/ns/prov#Agent,
+                        <br/>
+                        http://w3id.org/semiconto/Matter
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        semiconto
+                    </td>
+                    <td title='This pitfall occurs if file extensions such as ".owl", ".rdf", ".ttl", ".n3" and ".rdfxml" are included in an ontology URI. This pitfall is related with the recommendations provided in [9].	'>
+                        URI contains file extension
+                    </td>
+                    <td>
+                        P36
+                    </td>
+                    <td>
+                        Minor
+                    </td>
+                    <td>
+                        https://huanyu-li.github.io/SemicONTO/0.1/SemicONTO.ttl
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

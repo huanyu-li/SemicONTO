@@ -1,0 +1,1064 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.7), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://w3id.org/SemicONTO", "https://w3id.org/mdo/core", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/ns/prov", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/mdo/structure" ],
+    "prefixList" : {
+      "owl" : "http://www.w3.org/2002/07/owl#",
+      "rdf" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "xsd" : "http://www.w3.org/2001/XMLSchema#",
+      "" : "http://w3id.org/SemicONTO/",
+      "xml" : "http://www.w3.org/XML/1998/namespace",
+      "rdfs" : "http://www.w3.org/2000/01/rdf-schema#"
+    },
+    "title" : {
+      "undefined" : "Semiconductor ONTOlogy (SemicONTO)"
+    },
+    "iri" : "http://w3id.org/SemicONTO/",
+    "version" : "0.1",
+    "author" : [ "Huanyu Li" ],
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://github.com/huanyu-li/SemicONTO/blob/main/LICENSE",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Huanyu Li",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2023-03-21",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "semiconto",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.1",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://w3id.org/SemicONTO/0.1/",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Semiconductor ONTOlogy (SemicONTO)",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://github.com/huanyu-li/SemicONTO",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "62",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:unionOf"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/ns/prov#Activity",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Activity"
+    },
+    "subClasses" : [ "6", "7" ],
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://w3id.org/SemicONTO/Experiment",
+    "baseIri" : "http://w3id.org/SemicONTO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Experiment",
+      "undefined" : "Experiment"
+    },
+    "subClasses" : [ "8" ],
+    "id" : "6",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://w3id.org/SemicONTO/MolecularEntity",
+    "baseIri" : "http://w3id.org/SemicONTO",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.obolibrary.org/obo/chebi#23367",
+        "type" : "label"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://emmo.info/emmo#EMMO_21205421_5783_4d3e_81e5_10c5d894a88a",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MolecularEntity"
+    },
+    "id" : "13",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://w3id.org/SemicONTO/Donor",
+    "baseIri" : "http://w3id.org/SemicONTO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Donor",
+      "undefined" : "Donor"
+    },
+    "id" : "18",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://w3id.org/SemicONTO/N-TypeSemiconductor",
+    "baseIri" : "http://w3id.org/SemicONTO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "N-TypeSemiconductor",
+      "undefined" : "N-Type Semiconductor"
+    },
+    "id" : "20",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Entity",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Entity"
+    },
+    "subClasses" : [ "22" ],
+    "attributes" : [ "external" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://w3id.org/SemicONTO/ExtrinsicSemiconductor",
+    "baseIri" : "http://w3id.org/SemicONTO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExtrinsicSemiconductor",
+      "undefined" : "Extrinsic Semiconductor"
+    },
+    "subClasses" : [ "20", "52" ],
+    "id" : "4",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://w3id.org/mdo/structure/Composition",
+    "baseIri" : "https://w3id.org/mdo/structure",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://w3id.org/mdo/structure/Composition",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Composition",
+      "undefined" : "Composition"
+    },
+    "attributes" : [ "external" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://w3id.org/SemicONTO/StepInfoObj",
+    "baseIri" : "http://w3id.org/SemicONTO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StepInfoObj",
+      "undefined" : "Experimental Step Information Object"
+    },
+    "id" : "28",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "http://w3id.org/SemicONTO/Dopant",
+    "baseIri" : "http://w3id.org/SemicONTO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Dopant",
+      "undefined" : "Dopant"
+    },
+    "union" : [ "63", "18" ],
+    "subClasses" : [ "63", "18" ],
+    "attributes" : [ "union" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://w3id.org/SemicONTO/InformationObject",
+    "baseIri" : "http://w3id.org/SemicONTO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InformationObject",
+      "undefined" : "Information Object"
+    },
+    "subClasses" : [ "37", "28" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://w3id.org/SemicONTO/ChemicalEntity",
+    "baseIri" : "http://w3id.org/SemicONTO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ChemicalEntity"
+    },
+    "subClasses" : [ "47", "13" ],
+    "id" : "14",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Agent",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent"
+    },
+    "subClasses" : [ "34" ],
+    "attributes" : [ "external" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://w3id.org/SemicONTO/Equipment",
+    "baseIri" : "http://w3id.org/SemicONTO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Equipment",
+      "undefined" : "Equipment"
+    },
+    "id" : "34",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "10",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "62",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "17",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://w3id.org/SemicONTO/Material",
+    "baseIri" : "http://w3id.org/SemicONTO",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://emmo.info/emmo#EMMO_4207e895_8b83_4318_996a_72cfb32acd94",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Material",
+      "undefined" : "Material"
+    },
+    "subClasses" : [ "5" ],
+    "id" : "22",
+    "superClasses" : [ "21", "26" ]
+  }, {
+    "iri" : "https://w3id.org/mdo/core/Structure",
+    "baseIri" : "https://w3id.org/mdo/core",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://w3id.org/mdo/core/Structure",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Structure",
+      "undefined" : "Structure"
+    },
+    "attributes" : [ "external" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://w3id.org/SemicONTO/DopingRelation",
+    "baseIri" : "http://w3id.org/SemicONTO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DopingRelation",
+      "undefined" : "Doping Relation"
+    },
+    "id" : "74"
+  }, {
+    "iri" : "http://w3id.org/SemicONTO/P-TypeSemiconductor",
+    "baseIri" : "http://w3id.org/SemicONTO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "P-TypeSemiconductor",
+      "undefined" : "P-Type Semiconductor"
+    },
+    "id" : "52",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "38",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://w3id.org/SemicONTO/Acceptor",
+    "baseIri" : "http://w3id.org/SemicONTO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Acceptor",
+      "undefined" : "Acceptor"
+    },
+    "id" : "63",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "57",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "59",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "55",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "50",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://w3id.org/SemicONTO/ChemicalSubstance",
+    "baseIri" : "http://w3id.org/SemicONTO",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://emmo.info/emmo#EMMO_df96cbb6_b5ee_4222_8eab_b3675df24bea",
+        "type" : "label"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://purl.obolibrary.org/obo/chebi#59999",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ChemicalSubstance"
+    },
+    "id" : "47",
+    "superClasses" : [ "14" ]
+  }, {
+    "iri" : "http://w3id.org/SemicONTO/IntrinsicSemiconductor",
+    "baseIri" : "http://w3id.org/SemicONTO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IntrinsicSemiconductor",
+      "undefined" : "Intrinsic Semiconductor"
+    },
+    "id" : "24",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://w3id.org/SemicONTO/ExperimentInfoObj",
+    "baseIri" : "http://w3id.org/SemicONTO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExperimentInfoObj",
+      "undefined" : "Experiment Information Object"
+    },
+    "id" : "37",
+    "superClasses" : [ "44" ]
+  }, {
+    "iri" : "http://w3id.org/SemicONTO/SemiconductorExperiment",
+    "baseIri" : "http://w3id.org/SemicONTO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SemiconductorExperiment",
+      "undefined" : "Smiconductor Experiment"
+    },
+    "id" : "8",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://w3id.org/SemicONTO/Matter",
+    "baseIri" : "http://w3id.org/SemicONTO",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://emmo.info/emmo#EMMO_5b2222df_4da6_442f_8244_96e9e45887d1",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Matter",
+      "undefined" : "Matter"
+    },
+    "subClasses" : [ "22", "14" ],
+    "comment" : {
+      "undefined" : "A matter is a physical substance."
+    },
+    "id" : "26"
+  }, {
+    "iri" : "http://w3id.org/SemicONTO/ExperimentalStep",
+    "baseIri" : "http://w3id.org/SemicONTO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExperimentalStep",
+      "undefined" : "Experimental Step"
+    },
+    "id" : "7",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://w3id.org/SemicONTO/Semiconductor",
+    "baseIri" : "http://w3id.org/SemicONTO",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Semiconductor",
+      "undefined" : "Semiconductor"
+    },
+    "union" : [ "4", "24" ],
+    "subClasses" : [ "24", "4" ],
+    "attributes" : [ "union" ],
+    "id" : "5",
+    "superClasses" : [ "22" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "49",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "66",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "72",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "76",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "77",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "78",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.w3.org/ns/prov#startedAtTime",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "startedAtTime"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "0"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#used",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "used"
+    },
+    "domain" : "10",
+    "subproperty" : [ "11", "12" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://w3id.org/SemicONTO/hasNextStep",
+    "baseIri" : "http://w3id.org/SemicONTO",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasNextStep",
+      "undefined" : "has next step"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "15"
+  }, {
+    "iri" : "https://w3id.org/mdo/structure/DescriptiveFormula",
+    "baseIri" : "https://w3id.org/mdo/structure",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "DescriptiveFormula"
+    },
+    "domain" : "10",
+    "comment" : {
+      "undefined" : "descriptive formula"
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "16"
+  }, {
+    "range" : "5",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "23"
+  }, {
+    "range" : "26",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://w3id.org/SemicONTO/hasExperimentalStepAim",
+    "baseIri" : "http://w3id.org/SemicONTO",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "hasExperimentalStepAim",
+      "undefined" : "has experimental step aim"
+    },
+    "domain" : "28",
+    "attributes" : [ "datatype" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "10",
+    "subproperty" : [ "31", "32" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "30"
+  }, {
+    "range" : "35",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://w3id.org/SemicONTO/hasExperimentAim",
+    "baseIri" : "http://w3id.org/SemicONTO",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "hasExperimentAim",
+      "undefined" : "has experiment aim"
+    },
+    "domain" : "37",
+    "attributes" : [ "datatype" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#wasAssociatedWith",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "wasAssociatedWith"
+    },
+    "domain" : "10",
+    "attributes" : [ "object", "external" ],
+    "id" : "39"
+  }, {
+    "range" : "14",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "40"
+  }, {
+    "range" : "26",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "41"
+  }, {
+    "range" : "22",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "42"
+  }, {
+    "range" : "44",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "43"
+  }, {
+    "range" : "19",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "45"
+  }, {
+    "range" : "14",
+    "domain" : "47",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "46"
+  }, {
+    "range" : "44",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://w3id.org/SemicONTO/hasExperimentalStepDescription",
+    "baseIri" : "http://w3id.org/SemicONTO",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "hasExperimentalStepDescription",
+      "undefined" : "has experimental step description"
+    },
+    "domain" : "28",
+    "attributes" : [ "datatype" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://w3id.org/SemicONTO/hasExperimentalStep",
+    "baseIri" : "http://w3id.org/SemicONTO",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasExperimentalStep",
+      "undefined" : "has experimental step"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://w3id.org/SemicONTO/hasExperimentName",
+    "baseIri" : "http://w3id.org/SemicONTO",
+    "range" : "55",
+    "label" : {
+      "IRI-based" : "hasExperimentName",
+      "undefined" : "has experiment name"
+    },
+    "domain" : "37",
+    "attributes" : [ "datatype" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://w3id.org/SemicONTO/experimentsFor",
+    "baseIri" : "http://w3id.org/SemicONTO",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "experimentsFor",
+      "undefined" : "experiments for"
+    },
+    "superproperty" : [ "9" ],
+    "domain" : "10",
+    "attributes" : [ "object" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://w3id.org/SemicONTO/hasExperimentalStepID",
+    "baseIri" : "http://w3id.org/SemicONTO",
+    "range" : "57",
+    "label" : {
+      "IRI-based" : "hasExperimentalStepID"
+    },
+    "domain" : "28",
+    "attributes" : [ "datatype" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#endedAtTime",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "59",
+    "label" : {
+      "IRI-based" : "endedAtTime"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://w3id.org/SemicONTO/hasSubStep",
+    "baseIri" : "http://w3id.org/SemicONTO",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasSubStep",
+      "undefined" : "has sub-step"
+    },
+    "domain" : "7",
+    "attributes" : [ "object", "transitive" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://w3id.org/SemicONTO/isDescribedBy",
+    "baseIri" : "http://w3id.org/SemicONTO",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "isDescribedBy",
+      "undefined" : "is described by"
+    },
+    "domain" : "62",
+    "attributes" : [ "object" ],
+    "id" : "61"
+  }, {
+    "range" : "4",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "64"
+  }, {
+    "range" : "4",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://w3id.org/SemicONTO/hasEquipment",
+    "baseIri" : "http://w3id.org/SemicONTO",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "hasEquipment",
+      "undefined" : "has equipment"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "66"
+  }, {
+    "range" : "19",
+    "domain" : "63",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "67"
+  }, {
+    "range" : "1",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://w3id.org/SemicONTO/hasAcceptor",
+    "baseIri" : "http://w3id.org/SemicONTO",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "hasAcceptor",
+      "undefined" : "has acceptor"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "32"
+  }, {
+    "range" : "1",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "69"
+  }, {
+    "range" : "21",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "70"
+  }, {
+    "range" : "6",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://w3id.org/SemicONTO/hasStructure",
+    "baseIri" : "http://w3id.org/SemicONTO",
+    "range" : "73",
+    "label" : {
+      "IRI-based" : "hasStructure",
+      "undefined" : "has structure"
+    },
+    "domain" : "22",
+    "attributes" : [ "object" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://w3id.org/SemicONTO/hasEquipment",
+    "baseIri" : "http://w3id.org/SemicONTO",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "hasEquipment",
+      "undefined" : "has equipment"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "75"
+  }, {
+    "range" : "24",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://w3id.org/SemicONTO/experimentsOn",
+    "baseIri" : "http://w3id.org/SemicONTO",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "experimentsOn",
+      "undefined" : "experiments on"
+    },
+    "superproperty" : [ "9" ],
+    "domain" : "6",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "77"
+  }, {
+    "iri" : "https://w3id.org/mdo/structure/hasComposition",
+    "baseIri" : "https://w3id.org/mdo/structure",
+    "range" : "10",
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://w3id.org/mdo/structure/hasComposition",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasComposition",
+      "undefined" : "has composition"
+    },
+    "domain" : "10",
+    "attributes" : [ "object", "external" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://w3id.org/SemicONTO/hasDonor",
+    "baseIri" : "http://w3id.org/SemicONTO",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "hasDonor",
+      "undefined" : "has donor"
+    },
+    "superproperty" : [ "30" ],
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "31"
+  } ]
+}
